@@ -1,0 +1,682 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* employee_expense_advance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-17 05:58+0000\n"
+"PO-Revision-Date: 2021-06-17 13:59+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: zh_TW\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Approved By</strong>"
+msgstr "<strong>批准者</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Approved Date</strong>"
+msgstr "<strong>批准日期</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Approver Signature:____________________</strong>"
+msgstr "<strong>批准人簽章：</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Asset Account</strong>"
+msgstr "<strong>資產帳戶</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Comment :</strong><br/>"
+msgstr "<strong>評論：</strong><br/>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Confirmed By</strong>"
+msgstr "<strong>確認由</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Confirmed Date</strong>"
+msgstr "<strong>確認日期</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Department</strong>"
+msgstr "<strong>部門</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Employee Account</strong>"
+msgstr "<strong>員工帳戶</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Job Title</strong>"
+msgstr "<strong>職稱</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Paid Amount</strong>"
+msgstr "<strong>已付金額</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Paid By</strong>"
+msgstr "<strong>按付款</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Paid Date</strong>"
+msgstr "<strong>付款日期</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Payment Method</strong>"
+msgstr "<strong>付款條件</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Reason For Advance :</strong><br/>"
+msgstr "<strong>前進的理由：</strong><br/>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Request Date</strong>"
+msgstr "<strong>請求日期</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Request User</strong>"
+msgstr "<strong>請求使用者</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Requested Amount</strong>"
+msgstr "<strong>請求金額</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "<strong>Requester Signature:____________________</strong>"
+msgstr "<strong>要求人簽章：</strong>"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "Accounting Information"
+msgstr "會計資訊"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_needaction
+msgid "Action Needed"
+msgstr "需要採取行動"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+msgid "Add Comment"
+msgstr "新增評論"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_hr_expense__advance_amount
+#, fuzzy
+msgid "Advance Amount"
+msgstr "預付款金額"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "Advance Expense -"
+msgstr "預支費用 -"
+
+#. module: employee_expense_advance
+#: model:ir.model,name:employee_expense_advance.model_advance_expense_line
+#, fuzzy
+msgid "Advance Expense Line"
+msgstr "預支費用線"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+#, fuzzy
+msgid "Advance Expense Lines"
+msgstr "預支費用行"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__advance_line_id
+#, fuzzy
+msgid "Advance Expense Report"
+msgstr "預支費用報告"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__advance_expense_line_ids
+#, fuzzy
+msgid "Advance Expenses Lines"
+msgstr "預支費用行"
+
+#. module: employee_expense_advance
+#: model:ir.ui.menu,name:employee_expense_advance.menu_advance_expense_approved
+#, fuzzy
+msgid "Advance to Approve"
+msgstr "提前批准"
+
+#. module: employee_expense_advance
+#: model:ir.ui.menu,name:employee_expense_advance.menu_advance_expense_paid
+#, fuzzy
+msgid "Advance to Pay"
+msgstr "預付付款"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+msgid "Approve"
+msgstr "批准"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields.selection,name:employee_expense_advance.selection__employee_advance_expense__state__approved_hr_manager
+msgid "Approved"
+msgstr "已核准"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__hr_manager_by_id
+msgid "Approved By"
+msgstr "核准人"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__hr_validate_date
+msgid "Approved Date"
+msgstr "核准日"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__account_id
+msgid "Asset Account"
+msgstr "資產科目"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_attachment_count
+msgid "Attachment Count"
+msgstr "附件數量"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+msgid "Cancel"
+msgstr "取消"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields.selection,name:employee_expense_advance.selection__employee_advance_expense__state__cancel
+msgid "Cancelled"
+msgstr "已取消"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__comment
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+msgid "Comment"
+msgstr "評論"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__company_id
+msgid "Company"
+msgstr "公司"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+msgid "Confirm"
+msgstr "確認"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields.selection,name:employee_expense_advance.selection__employee_advance_expense__state__confirm
+msgid "Confirmed"
+msgstr "已確認"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__confirm_by_id
+#, fuzzy
+msgid "Confirmed By"
+msgstr "確認由"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__confirm_date
+#, fuzzy
+msgid "Confirmed Date"
+msgstr "確認日期"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__create_uid
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__create_uid
+msgid "Created by"
+msgstr "創建人"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__create_date
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__create_date
+msgid "Created on"
+msgstr "創建於"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__currency_id
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__currency_id
+msgid "Currency"
+msgstr "貨幣"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__department_id
+msgid "Department"
+msgstr "部門"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__description
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+msgid "Description"
+msgstr "描述"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__display_name
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields.selection,name:employee_expense_advance.selection__employee_advance_expense__state__done
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+msgid "Done"
+msgstr "完成"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields.selection,name:employee_expense_advance.selection__employee_advance_expense__state__draft
+msgid "Draft"
+msgstr "草稿"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__employee_id
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__employee_id
+msgid "Employee"
+msgstr "員工"
+
+#. module: employee_expense_advance
+#: model:ir.model,name:employee_expense_advance.model_employee_advance_expense
+#, fuzzy
+msgid "Employee Advance Expense"
+msgstr "員工預支費用"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__partner_id
+#, fuzzy
+msgid "Employee Partner"
+msgstr "員工合作夥伴"
+
+#. module: employee_expense_advance
+#: model:ir.model,name:employee_expense_advance.model_hr_expense
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__product_id
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+msgid "Expense"
+msgstr "費用"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_hr_expense__advance_expense_id
+#, fuzzy
+msgid "Expense Advance"
+msgstr "費用預支款"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_hr_expense__advance_currency_id
+#, fuzzy
+msgid "Expense Advance Currency"
+msgstr "費用預支貨幣"
+
+#. module: employee_expense_advance
+#: model:ir.actions.act_window,name:employee_expense_advance.action_employee_advance_expense
+#: model:ir.actions.act_window,name:employee_expense_advance.action_employee_advance_expense_approve
+#: model:ir.actions.act_window,name:employee_expense_advance.action_employee_advance_expense_paid
+#: model:ir.ui.menu,name:employee_expense_advance.menu_advance_expense_request
+#, fuzzy
+msgid "Expense Advance Requests"
+msgstr "費用預支請求"
+
+#. module: employee_expense_advance
+#: model:ir.ui.menu,name:employee_expense_advance.menu_advance_expense_employee
+#, fuzzy
+msgid "Expense Advances"
+msgstr "費用預支款"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__expense_line_ids
+msgid "Expense Lines"
+msgstr "費用明細"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_follower_ids
+msgid "Followers"
+msgstr "關注者"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "關注者(頻道)"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "關注者(客戶)"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+msgid "General Information"
+msgstr "一般資訊"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__id
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__id
+msgid "ID"
+msgstr "ID"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,help:employee_expense_advance.field_employee_advance_expense__message_needaction
+#: model:ir.model.fields,help:employee_expense_advance.field_employee_advance_expense__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "被勾選代表有新訊息需要您留意。"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,help:employee_expense_advance.field_employee_advance_expense__message_has_error
+#: model:ir.model.fields,help:employee_expense_advance.field_employee_advance_expense__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "被勾選代表有訊息發生傳送錯誤。"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_is_follower
+msgid "Is Follower"
+msgstr "是關注者"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__is_paid
+#, fuzzy
+msgid "Is Paid"
+msgstr "已支付"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__job_id
+msgid "Job Title"
+msgstr "職稱"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+msgid "Journal"
+msgstr "日記帳簿"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__move_id
+msgid "Journal Entry"
+msgstr "日記帳分錄"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line____last_update
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense____last_update
+msgid "Last Modified on"
+msgstr "最後修改"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__write_uid
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__write_uid
+msgid "Last Updated by"
+msgstr "最後更新"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__write_date
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__write_date
+msgid "Last Updated on"
+msgstr "最後更新時間"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "主要附件"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_has_error
+msgid "Message Delivery error"
+msgstr "訊息傳遞錯誤"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_ids
+msgid "Messages"
+msgstr "訊息"
+
+#. module: employee_expense_advance
+#: code:addons/employee_expense_advance/models/employee_advance_expense.py:0
+#, fuzzy, python-format
+msgid "No Credit account found for the Journal, please configure one."
+msgstr "沒有為《華爾街日報》找到信用帳戶，請配置一個。"
+
+#. module: employee_expense_advance
+#: code:addons/employee_expense_advance/models/employee_advance_expense.py:0
+#, fuzzy, python-format
+msgid "No Debit account found for the account, please configure one."
+msgstr "沒有為該帳戶找到借記帳戶，請配置一個。"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__name
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__name
+msgid "Number"
+msgstr "數字"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_needaction_counter
+msgid "Number of Actions"
+msgstr "動作數量"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_has_error_counter
+msgid "Number of errors"
+msgstr "異常數量"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,help:employee_expense_advance.field_employee_advance_expense__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "需要行動的消息數量"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,help:employee_expense_advance.field_employee_advance_expense__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "發送錯誤的郵件數量"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,help:employee_expense_advance.field_employee_advance_expense__message_unread_counter
+msgid "Number of unread messages"
+msgstr "未讀消息數量"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields.selection,name:employee_expense_advance.selection__employee_advance_expense__state__paid
+msgid "Paid"
+msgstr "已付款"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__paid_amount
+msgid "Paid Amount"
+msgstr "支付的金額"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__account_by_id
+#, fuzzy
+msgid "Paid By"
+msgstr "按付款"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__account_validate_date
+msgid "Paid Date"
+msgstr "付款日期"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__paid_in_currency
+#, fuzzy
+msgid "Paid in Currency"
+msgstr "以貨幣支付"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+msgid "Pay"
+msgstr "付款"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__payment_id
+msgid "Payment"
+msgstr "付款"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__journal_id
+msgid "Payment Method"
+msgstr "付款方式"
+
+#. module: employee_expense_advance
+#: code:addons/employee_expense_advance/models/employee_advance_expense.py:0
+#, fuzzy, python-format
+msgid "Please add some advance expense lines."
+msgstr "請添加一些預支費用線。"
+
+#. module: employee_expense_advance
+#: model:ir.actions.report,name:employee_expense_advance.report_advance_expense
+#, fuzzy
+msgid "Print Advance Expense"
+msgstr "列印預付款"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__quantity
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+msgid "Quantity"
+msgstr "數量"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__reason_for_advance
+#, fuzzy
+msgid "Reason For Advance"
+msgstr "前進的理由"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+#, fuzzy
+msgid "Reason for Advance"
+msgstr "前進的理由"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+#, fuzzy
+msgid "Reason for Advance............."
+msgstr "前進的理由。。。"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__reambursment
+#, fuzzy
+msgid "Reimbursement"
+msgstr "報銷"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+msgid "Reject"
+msgstr "拒絕"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields.selection,name:employee_expense_advance.selection__employee_advance_expense__state__reject
+msgid "Rejected"
+msgstr "已拒絕"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__total_amount_expense
+#, fuzzy
+msgid "Requested Amount"
+msgstr "請求金額"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__request_date
+msgid "Requested Date"
+msgstr "要求日期"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__user_id
+#, fuzzy
+msgid "Requested User"
+msgstr "請求使用者"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "簡訊發送錯誤"
+
+#. module: employee_expense_advance
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+msgid "Set to Draft"
+msgstr "設置為草稿"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__state
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__state
+msgid "State"
+msgstr "狀態"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__total_amount
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+msgid "Subtotal"
+msgstr "小計"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__unit_amount
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+msgid "Unit Price"
+msgstr "單價"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_advance_expense_line__product_uom_id
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.employee_advance_expense_form_view
+#: model_terms:ir.ui.view,arch_db:employee_expense_advance.report_expense_show
+msgid "Unit of Measure"
+msgstr "單位"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_unread
+msgid "Unread Messages"
+msgstr "未讀訊息"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "未讀訊息計數器"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,field_description:employee_expense_advance.field_employee_advance_expense__website_message_ids
+msgid "Website Messages"
+msgstr "網站訊息"
+
+#. module: employee_expense_advance
+#: model:ir.model.fields,help:employee_expense_advance.field_employee_advance_expense__website_message_ids
+#, fuzzy
+msgid "Website communication history"
+msgstr "網站通訊歷史"
