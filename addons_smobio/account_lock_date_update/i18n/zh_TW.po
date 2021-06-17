@@ -1,0 +1,114 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_lock_date_update
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 2.2.4\n"
+"Last-Translator: \n"
+"Language: zh_TW\n"
+
+#. module: account_lock_date_update
+#: model:ir.model,name:account_lock_date_update.model_account_update_lock_date
+msgid "Account Update Lock_date"
+msgstr "會計更新鎖定日期"
+
+#. module: account_lock_date_update
+#: model_terms:ir.ui.view,arch_db:account_lock_date_update.account_update_lock_date_form_view
+msgid "Cancel"
+msgstr "取消查詢"
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__company_id
+msgid "Company"
+msgstr "公司"
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__create_uid
+msgid "Created by"
+msgstr "建立者"
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__create_date
+msgid "Created on"
+msgstr "建立於"
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date____last_update
+msgid "Last Modified on"
+msgstr "最後修改:"
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__write_uid
+msgid "Last Updated by"
+msgstr "最後更新："
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__write_date
+msgid "Last Updated on"
+msgstr "最後更新於"
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__fiscalyear_lock_date
+msgid "Lock Date"
+msgstr "鎖定日期"
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__period_lock_date
+msgid "Lock Date for Non-Advisers"
+msgstr "非主辦會計的鎖定日期"
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,help:account_lock_date_update.field_account_update_lock_date__fiscalyear_lock_date
+msgid ""
+"No users, including Advisers, can edit accounts prior to and inclusive of "
+"this date. Use it for fiscal year locking for example."
+msgstr ""
+"此為系統鎖定日期，所有人員均無法修改這個日期之前的會計項目，一般使用在年度/"
+"月度結帳作業。"
+
+#. module: account_lock_date_update
+#: model:ir.model.fields,help:account_lock_date_update.field_account_update_lock_date__period_lock_date
+msgid ""
+"Only users with the 'Adviser' role can edit accounts prior to and inclusive "
+"of this date. Use it for period locking inside an open fiscal year, for "
+"example."
+msgstr ""
+"只有帶有「主辦會計」角色的使用者可以編輯此日期前以及包括此日期的帳戶。例如："
+"用它來對開啟狀態的會計年度進行期間鎖定。"
+
+#. module: account_lock_date_update
+#: model_terms:ir.ui.view,arch_db:account_lock_date_update.account_update_lock_date_form_view
+msgid "Update"
+msgstr "更新"
+
+#. module: account_lock_date_update
+#: model:ir.actions.act_window,name:account_lock_date_update.account_update_lock_date_act_window
+#: model:ir.ui.menu,name:account_lock_date_update.account_update_lock_date_menu
+msgid "Update accounting lock dates"
+msgstr "更新日記帳鎖定日期"
+
+#. module: account_lock_date_update
+#: code:addons/account_lock_date_update/wizards/account_update_lock_date.py:0
+#, python-format
+msgid "You are not allowed to execute this action."
+msgstr "權限不足，您不被允許執行此操作。"

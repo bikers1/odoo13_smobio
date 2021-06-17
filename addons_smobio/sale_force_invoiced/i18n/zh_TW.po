@@ -1,0 +1,39 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_force_invoiced
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: \n"
+"Language: zh_TW\n"
+
+#. module: sale_force_invoiced
+#: model:ir.model.fields,field_description:sale_force_invoiced.field_sale_order__force_invoiced
+msgid "Force invoiced"
+msgstr "強制設置為已開立全額發票狀態"
+
+#. module: sale_force_invoiced
+#: model:ir.model,name:sale_force_invoiced.model_sale_order
+msgid "Sales Order"
+msgstr "銷售訂單"
+
+#. module: sale_force_invoiced
+#: model:ir.model.fields,help:sale_force_invoiced.field_sale_order__force_invoiced
+msgid ""
+"When you set this field, the sales order will be considered as fully "
+"invoiced, even when there may be ordered or delivered quantities pending to "
+"invoice."
+msgstr ""
+"當您勾選時，該銷售訂單之發票狀態將強制設為已開立全額發票，即使訂單數量以及已"
+"開立發票數量不相符\n"
+"此功能使用於客戶要求銷售產品之退回或折讓時(當單據為已鎖定狀態可勾選)"

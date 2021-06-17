@@ -1,0 +1,91 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_bom_structure_xlsx
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: \n"
+"Language: zh_TW\n"
+
+#. module: mrp_bom_structure_xlsx
+#: code:addons/mrp_bom_structure_xlsx/report/bom_structure_xlsx.py:0
+#, python-format
+msgid "BOM Name"
+msgstr "BOM 名稱"
+
+#. module: mrp_bom_structure_xlsx
+#: code:addons/mrp_bom_structure_xlsx/report/bom_structure_xlsx.py:0
+#, python-format
+msgid "BOM Structure"
+msgstr "BOM 結構"
+
+#. module: mrp_bom_structure_xlsx
+#: model:ir.model,name:mrp_bom_structure_xlsx.model_report_mrp_bom_structure_xlsx_bom_structure_xlsx
+msgid "BOM Structure XLSX Report"
+msgstr "物料清單結構 XLSX 報表"
+
+#. module: mrp_bom_structure_xlsx
+#: model:ir.model.fields,field_description:mrp_bom_structure_xlsx.field_report_mrp_bom_structure_xlsx_bom_structure_xlsx__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: mrp_bom_structure_xlsx
+#: model:ir.actions.report,name:mrp_bom_structure_xlsx.bom_structure_xlsx
+msgid "Export BoM Structure to Excel"
+msgstr "將 BoM 結構匯出到 Excel"
+
+#. module: mrp_bom_structure_xlsx
+#: model:ir.model.fields,field_description:mrp_bom_structure_xlsx.field_report_mrp_bom_structure_xlsx_bom_structure_xlsx__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_bom_structure_xlsx
+#: model:ir.model.fields,field_description:mrp_bom_structure_xlsx.field_report_mrp_bom_structure_xlsx_bom_structure_xlsx____last_update
+msgid "Last Modified on"
+msgstr "最後修改:"
+
+#. module: mrp_bom_structure_xlsx
+#: code:addons/mrp_bom_structure_xlsx/report/bom_structure_xlsx.py:0
+#, python-format
+msgid "Level"
+msgstr "層級"
+
+#. module: mrp_bom_structure_xlsx
+#: code:addons/mrp_bom_structure_xlsx/report/bom_structure_xlsx.py:0
+#, python-format
+msgid "Product Name"
+msgstr "產品名稱"
+
+#. module: mrp_bom_structure_xlsx
+#: code:addons/mrp_bom_structure_xlsx/report/bom_structure_xlsx.py:0
+#, python-format
+msgid "Product Reference"
+msgstr "產品參考"
+
+#. module: mrp_bom_structure_xlsx
+#: code:addons/mrp_bom_structure_xlsx/report/bom_structure_xlsx.py:0
+#, python-format
+msgid "Quantity"
+msgstr "銷售数量"
+
+#. module: mrp_bom_structure_xlsx
+#: code:addons/mrp_bom_structure_xlsx/report/bom_structure_xlsx.py:0
+#, python-format
+msgid "Reference"
+msgstr "編號:"
+
+#. module: mrp_bom_structure_xlsx
+#: code:addons/mrp_bom_structure_xlsx/report/bom_structure_xlsx.py:0
+#, python-format
+msgid "Unit of Measure"
+msgstr "單位"

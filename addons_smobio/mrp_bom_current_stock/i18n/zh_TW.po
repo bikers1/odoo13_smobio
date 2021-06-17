@@ -1,0 +1,293 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_bom_current_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: \n"
+"Language: zh_TW\n"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+#, python-format
+msgid "BOM Current Stock Report"
+msgstr "物料清單及時庫存狀況報表"
+
+#. module: mrp_bom_current_stock
+#: model:ir.actions.act_window,name:mrp_bom_current_stock.mrp_bom_current_stock_action
+#: model:ir.ui.menu,name:mrp_bom_current_stock.mrp_bom_current_stock_menu
+msgid "BoM Current Stock Explosion"
+msgstr "BOM細項物料展開查詢"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__bom_level
+msgid "BoM Level"
+msgstr "BOM層級"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#, python-format
+msgid "BoM Reference"
+msgstr "BOM參照"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__bom_line
+msgid "BoM line"
+msgstr "BOM展開項目"
+
+#. module: mrp_bom_current_stock
+#: model:ir.actions.report,name:mrp_bom_current_stock.action_report_bom_current_stock_pdf
+msgid "BoM: Current Stock Report PDF"
+msgstr "BOM：目前庫存狀快列印(PDF)"
+
+#. module: mrp_bom_current_stock
+#: model:ir.actions.report,name:mrp_bom_current_stock.action_report_bom_current_stock_xlsx
+msgid "BoM: Current Stock Report XLSX"
+msgstr "BOM：目前庫存狀快列印(EXL)"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
+msgid "Cancel"
+msgstr "取消查詢"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "Close"
+msgstr "取消"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__create_uid
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__create_uid
+msgid "Created by"
+msgstr "建立者"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__create_date
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__create_date
+msgid "Created on"
+msgstr "建立於"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__display_name
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__display_name
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_report_mrp_bom_current_stock_report_mrpbom_current_stock_xlsx__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
+msgid "Explode"
+msgstr "展開查詢"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__explosion_id
+msgid "Explosion"
+msgstr "物料展開"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "Explosion result"
+msgstr "BOM展開結果"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "Export XLSX"
+msgstr "導出EXL"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__id
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__id
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_report_mrp_bom_current_stock_report_mrpbom_current_stock_xlsx__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock____last_update
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line____last_update
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_report_mrp_bom_current_stock_report_mrpbom_current_stock_xlsx____last_update
+msgid "Last Modified on"
+msgstr "最後修改:"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__write_uid
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__write_uid
+msgid "Last Updated by"
+msgstr "最後更新："
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__write_date
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__write_date
+msgid "Last Updated on"
+msgstr "最後更新於"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+#, python-format
+msgid "Level"
+msgstr "層級"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__line_ids
+msgid "Line"
+msgstr "明細項目"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+#, python-format
+msgid "Location"
+msgstr "地點"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+msgid "Location:"
+msgstr "位置："
+
+#. module: mrp_bom_current_stock
+#: model:ir.model,name:mrp_bom_current_stock.model_report_mrp_bom_current_stock_report_mrpbom_current_stock_xlsx
+msgid "MRP BOM Current Stock XLSX Report"
+msgstr "MRP BOM 目前庫存 XLSX 報告"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model,name:mrp_bom_current_stock.model_mrp_bom_current_stock
+msgid "MRP Bom Route Current Stock"
+msgstr ""
+
+#. module: mrp_bom_current_stock
+#: model:ir.model,name:mrp_bom_current_stock.model_mrp_bom_current_stock_line
+msgid "MRP Bom Route Current Stock Line"
+msgstr ""
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__bom_id
+msgid "Parent BoM"
+msgstr "上級 BoM"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#, python-format
+msgid "Parent BoM Ref"
+msgstr "上級BOM參照"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#, python-format
+msgid "Parent Product Ref"
+msgstr "上級產品參照"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "Print PDF"
+msgstr "列印Pdf"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+msgid "Product"
+msgstr "產品"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__product_qty
+msgid "Product Quantity"
+msgstr "數量"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#, python-format
+msgid "Product Reference"
+msgstr "產品參考"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__product_tmpl_id
+msgid "Product Template"
+msgstr "商品模版"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__product_uom_id
+msgid "Product Unit of Measure"
+msgstr "產品測量單位"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__product_id
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__product_id
+msgid "Product Variant"
+msgstr "產品變體"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+#, python-format
+msgid "Qty Available (Location)"
+msgstr "可用數量(該位置)"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__qty_available_in_source_loc
+msgid "Qty Available in Source"
+msgstr "來源位置可用數量"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__product_qty
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+#, python-format
+msgid "Quantity"
+msgstr "銷售数量"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
+msgid "Select product and location to explode"
+msgstr "選擇展開之BOM主件以及物料查詢位置"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "Set the source location for every component."
+msgstr "依不同的領料來源位置"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__location_id
+msgid "Source location"
+msgstr "來源位置"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__bom_id
+msgid "Starting Bill of Materials"
+msgstr "展開查詢物料清單"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__location_id
+msgid "Starting location"
+msgstr "物料查詢位置"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__product_uom_id
+msgid "Unit of Measure"
+msgstr "單位"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,help:mrp_bom_current_stock.field_mrp_bom_current_stock__product_uom_id
+msgid ""
+"Unit of Measure (Unit of Measure) is the unit of measurement for the "
+"inventory control"
+msgstr "計量單位(計量單位)是庫存控制的量度單位"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#, python-format
+msgid "UoM"
+msgstr "單位"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "or"
+msgstr "或"

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_res_partner2opportunity_partner_mass" model="ir.ui.view">
+        <field name="name">view res partner 2 opportunity partner mass</field>
+        <field name="model">res.partner2opportunity.partner.mass</field>
+        <field name="arch" type="xml">
+            <form>
+                <group string="設定商機名稱前綴及後綴">
+                    <field name="prefix" string="商機名稱前綴" class="oe_inline"/>
+                    <field name="suffix" string="商機名稱後綴" class="oe_inline"/>
+                </group>
+                <group string="指派這些商機給">
+                    <field name="user_id" string="銷售人員" class="oe_inline"/>
+                    <field name="team_id" string="銷售團隊" class="oe_inline"/>
+                </group>
+                <group string="選擇聯絡人">
+                    <field name="partner_ids" nolabel="1">
+                        <tree string="Partners">
+                            <field name="display_name" />
+                            <field name="phone" />
+                            <field name="email" />
+                        </tree>
+                    </field>
+                </group>
+                <footer>
+                    <button name="mass_convert" string="轉換商機" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="action_res_partner2opportunity_partner_mass" name="轉換商機" binding_model="res.partner" res_model="res.partner2opportunity.partner.mass" view_mode="form" target="new" context="{'mass_convert' : True}" view_id="view_res_partner2opportunity_partner_mass" groups="sales_team.group_sale_salesman" />
+</odoo>

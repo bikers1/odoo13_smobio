@@ -1,0 +1,92 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_no_negative
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: \n"
+"Language: zh_TW\n"
+
+#. module: stock_no_negative
+#: code:addons/stock_no_negative/models/stock_quant.py:0
+#, python-format
+msgid " lot '%s'"
+msgstr "批次 '%s'"
+
+#. module: stock_no_negative
+#: model:ir.model.fields,field_description:stock_no_negative.field_product_category__allow_negative_stock
+#: model:ir.model.fields,field_description:stock_no_negative.field_product_product__allow_negative_stock
+#: model:ir.model.fields,field_description:stock_no_negative.field_product_template__allow_negative_stock
+#: model:ir.model.fields,field_description:stock_no_negative.field_stock_location__allow_negative_stock
+msgid "Allow Negative Stock"
+msgstr "允許負數庫存"
+
+#. module: stock_no_negative
+#: model:ir.model.fields,help:stock_no_negative.field_product_category__allow_negative_stock
+msgid ""
+"Allow negative stock levels for the stockable products attached to this "
+"category. The options doesn't apply to products attached to sub-categories "
+"of this category."
+msgstr ""
+"允許附加到此類別的可庫存產品的負庫存水準。這些選項不適用於附加到此類別子類別"
+"的產品。"
+
+#. module: stock_no_negative
+#: model:ir.model.fields,help:stock_no_negative.field_stock_location__allow_negative_stock
+msgid ""
+"Allow negative stock levels for the stockable products attached to this "
+"location."
+msgstr "允許添加到此位置的可庫存產品的負庫存水準。"
+
+#. module: stock_no_negative
+#: model:ir.model.fields,help:stock_no_negative.field_product_product__allow_negative_stock
+#: model:ir.model.fields,help:stock_no_negative.field_product_template__allow_negative_stock
+msgid ""
+"If this option is not active on this product nor on its product category and "
+"that this product is a stockable product, then the validation of the related "
+"stock moves will be blocked if the stock level becomes negative with the "
+"stock move."
+msgstr ""
+"若此選項在此產品或該產品之產品類別上並未勾選，同時產品屬於可庫存產品，當操作"
+"庫存調撥造成該產品在位置上產生負庫存時，該庫存移動將被訊息阻止"
+
+#. module: stock_no_negative
+#: model:ir.model,name:stock_no_negative.model_stock_location
+msgid "Inventory Locations"
+msgstr "盤點位置"
+
+#. module: stock_no_negative
+#: model:ir.model,name:stock_no_negative.model_product_category
+msgid "Product Category"
+msgstr "產品類別"
+
+#. module: stock_no_negative
+#: model:ir.model,name:stock_no_negative.model_product_template
+msgid "Product Template"
+msgstr "商品模版"
+
+#. module: stock_no_negative
+#: model:ir.model,name:stock_no_negative.model_stock_quant
+msgid "Quants"
+msgstr "份"
+
+#. module: stock_no_negative
+#: code:addons/stock_no_negative/models/stock_quant.py:0
+#, python-format
+msgid ""
+"You cannot validate this stock operation because the stock level of the "
+"product '%s'%s would become negative (%s) on the stock location '%s' and "
+"negative stock is not allowed for this product and/or location."
+msgstr ""
+"您無法驗證此庫存操作, 因為產品'%s'%s 的庫存水準將變為負值(%s), 並且此產品和/"
+"或位置'%s'不允許負庫存。"

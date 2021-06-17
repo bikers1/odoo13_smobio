@@ -1,0 +1,1684 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_financial_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 2.2.4\n"
+"Last-Translator: \n"
+"Language: zh_TW\n"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
+msgid "&gt; 120 d."
+msgstr "&gt; 120 天"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
+msgid "1 - 30 d."
+msgstr "1-30 天"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
+msgid "10"
+msgstr "10"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
+msgid "31 - 60 d."
+msgstr "31-60 天"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
+msgid "61 - 90 d."
+msgstr "61-90 天"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
+msgid "91 - 120 d."
+msgstr "91-120 天"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
+msgid "<b>Taxes summary</b>"
+msgstr "<b> 稅務彙整 </b>"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_buttons
+msgid "<span class=\"fa fa-download\"/> Export"
+msgstr "<span class=\"fa fa-download\"/> 匯出"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_buttons
+msgid "<span class=\"fa fa-print\"/> Print"
+msgstr "<span class=\"fa fa-print\"/> 列印"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_account_financial_report_abstract_wizard
+msgid "Abstract Wizard"
+msgstr "摘要報告"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_account_financial_report_abstract_report_xlsx
+msgid "Abstract XLSX Account Financial Report"
+msgstr ""
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model:ir.model,name:account_financial_report.model_account_account
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
+#, python-format
+msgid "Account"
+msgstr "會計項目"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_account_group
+msgid "Account Group"
+msgstr "科目組"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#, python-format
+msgid "Account Name"
+msgstr "帳戶名稱"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+#, python-format
+msgid "Account at 0 filter"
+msgstr "會計科目為0"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_filters
+#, python-format
+msgid "Account balance at 0 filter"
+msgstr "會計科目餘額為0-篩選"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_account_group__account_ids
+msgid "Accounts"
+msgstr "帳戶"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__centralize
+msgid "Activate centralization"
+msgstr "啟動彙整表達"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+msgid ""
+"Age ≤ 120\n"
+"                        d."
+msgstr "帳齡≤120天"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#, python-format
+msgid "Age ≤ 120 d."
+msgstr "帳齡≤120天"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+msgid ""
+"Age ≤ 30\n"
+"                        d."
+msgstr "帳齡≤30天"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#, python-format
+msgid "Age ≤ 30 d."
+msgstr "帳齡≤30天"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+msgid ""
+"Age ≤ 60\n"
+"                        d."
+msgstr "帳齡≤60天"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#, python-format
+msgid "Age ≤ 60 d."
+msgstr "帳齡≤60天"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+msgid ""
+"Age ≤ 90\n"
+"                        d."
+msgstr "帳齡≤90天"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#, python-format
+msgid "Age ≤ 90 d."
+msgstr "帳齡≤90天"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: model:ir.actions.act_window,name:account_financial_report.action_aged_partner_balance_wizard
+#: model:ir.actions.client,name:account_financial_report.action_report_aged_partner_balance
+#: model:ir.actions.report,name:account_financial_report.action_print_report_aged_partner_balance_html
+#: model:ir.actions.report,name:account_financial_report.action_print_report_aged_partner_balance_qweb
+#: model:ir.ui.menu,name:account_financial_report.menu_aged_partner_balance_wizard
+#, python-format
+msgid "Aged Partner Balance"
+msgstr "到期的業務夥伴餘額"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_base
+msgid "Aged Partner Balance -"
+msgstr "合作夥伴餘額帳齡報表"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_account_financial_report_aged_partner_balance
+msgid "Aged Partner Balance Report"
+msgstr "合作夥伴餘額帳齡報表"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_aged_partner_balance_report_wizard
+msgid "Aged Partner Balance Wizard"
+msgstr "合作夥伴餘額帳齡報表"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_a_f_r_report_aged_partner_balance_xlsx
+msgid "Aged Partner Balance XLSL Report"
+msgstr ""
+
+#. module: account_financial_report
+#: model:ir.actions.report,name:account_financial_report.action_report_aged_partner_balance_xlsx
+msgid "Aged Partner Balance XLSX"
+msgstr "合作夥伴餘額帳齡報表(EXL)"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/journal_ledger_wizard.py:0
+#, python-format
+msgid "All"
+msgstr "全部"
+
+#. module: account_financial_report
+#: model:ir.model.fields.selection,name:account_financial_report.selection__aged_partner_balance_report_wizard__target_move__all
+#: model:ir.model.fields.selection,name:account_financial_report.selection__general_ledger_report_wizard__target_move__all
+#: model:ir.model.fields.selection,name:account_financial_report.selection__open_items_report_wizard__target_move__all
+#: model:ir.model.fields.selection,name:account_financial_report.selection__trial_balance_report_wizard__target_move__all
+msgid "All Entries"
+msgstr "所有分錄"
+
+#. module: account_financial_report
+#: model:ir.model.fields.selection,name:account_financial_report.selection__aged_partner_balance_report_wizard__target_move__posted
+#: model:ir.model.fields.selection,name:account_financial_report.selection__general_ledger_report_wizard__target_move__posted
+#: model:ir.model.fields.selection,name:account_financial_report.selection__open_items_report_wizard__target_move__posted
+#: model:ir.model.fields.selection,name:account_financial_report.selection__trial_balance_report_wizard__target_move__posted
+msgid "All Posted Entries"
+msgstr "所有已過帳分錄"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+#, python-format
+msgid "All entries"
+msgstr "所有條目"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+#, python-format
+msgid "All posted entries"
+msgstr "所有已過帳分錄"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+msgid "Amount Cur."
+msgstr "外幣金額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#, python-format
+msgid "Amount Currency"
+msgstr "總額外幣"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#, python-format
+msgid "Amount cur."
+msgstr ""
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
+msgid "Balance"
+msgstr "餘額"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
+msgid "Base Amount"
+msgstr "基本金額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#, python-format
+msgid "Base Balance"
+msgstr "未稅金額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#, python-format
+msgid "Base Credit"
+msgstr "借方計算基礎"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#, python-format
+msgid "Base Debit"
+msgstr "貸方計算基礎"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__based_on
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_filters
+msgid "Based On"
+msgstr "基於"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/vat_report_xlsx.py:0
+#, python-format
+msgid "Based on"
+msgstr "根據"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.aged_partner_balance_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.journal_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.open_items_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.vat_report_wizard
+msgid "Cancel"
+msgstr "取消查詢"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#, python-format
+msgid "Centralize filter"
+msgstr "彙整篩選"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_account_account__centralized
+msgid "Centralized"
+msgstr "彙整"
+
+#. module: account_financial_report
+#: model:ir.model.fields.selection,name:account_financial_report.selection__trial_balance_report_wizard__hierarchy_on__relation
+msgid "Child Accounts"
+msgstr "子階分析帳戶"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_account_group__group_child_ids
+msgid "Child Groups"
+msgstr "子類群組"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/vat_report_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_base
+#, python-format
+msgid "Code"
+msgstr "代號"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__company_id
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__company_id
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__company_id
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__company_id
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__company_id
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__company_id
+#, python-format
+msgid "Company"
+msgstr "公司"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_account_group__compute_account_ids
+msgid "Compute accounts"
+msgstr "計算帳戶"
+
+#. module: account_financial_report
+#: model:ir.model.fields.selection,name:account_financial_report.selection__trial_balance_report_wizard__hierarchy_on__computed
+msgid "Computed Accounts"
+msgstr "計算帳戶"
+
+#. module: account_financial_report
+#: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__hierarchy_on
+msgid ""
+"Computed Accounts: Use when the account group have codes\n"
+"        that represent prefixes of the actual accounts.\n"
+"\n"
+"        Child Accounts: Use when your account groups are hierarchical.\n"
+"\n"
+"        No hierarchy: Use to display just the accounts, without any "
+"grouping.\n"
+"        "
+msgstr ""
+"計算帳戶:當帳戶組具有代碼時使用\n"
+"        表示實際帳戶的首碼。\n"
+"\n"
+"子帳戶:當帳戶組是分層帳戶時使用。\n"
+"\n"
+"無層次結構:用於僅顯示帳戶,而不顯示任何分組。"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+msgid ""
+"Cost\n"
+"                            center"
+msgstr ""
+"成本\n"
+"                            中心"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#, python-format
+msgid "Cost center"
+msgstr "分析帳戶"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__create_uid
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__create_uid
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__create_uid
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__create_uid
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__create_uid
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__create_uid
+msgid "Created by"
+msgstr "建立者"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__create_date
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__create_date
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__create_date
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__create_date
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__create_date
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__create_date
+msgid "Created on"
+msgstr "建立於"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
+#, python-format
+msgid "Credit"
+msgstr "貸方"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#, python-format
+msgid "Cumul. Bal."
+msgstr "累積餘額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
+#, python-format
+msgid "Cur."
+msgstr "目前"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+#, python-format
+msgid "Cur. Original"
+msgstr "目前來源"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+#, python-format
+msgid "Cur. Residual"
+msgstr "目前餘額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#, python-format
+msgid "Currency"
+msgstr "貨幣"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+#, python-format
+msgid "Current"
+msgstr "目前"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/wizard/journal_ledger_wizard.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+#, python-format
+msgid "Date"
+msgstr "日期"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__date_at
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__date_at
+msgid "Date At"
+msgstr "日期"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__date_from
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__date_from
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__date_from
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_filters
+msgid "Date From"
+msgstr "日期從"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__date_to
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__date_to
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_filters
+msgid "Date To"
+msgstr "日期至"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_filters
+#, python-format
+msgid "Date at filter"
+msgstr "日期篩選"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/vat_report_xlsx.py:0
+#, python-format
+msgid "Date from"
+msgstr "日期由"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__date_range_id
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__date_range_id
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__date_range_id
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__date_range_id
+msgid "Date range"
+msgstr "選擇日期"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+#, python-format
+msgid "Date range filter"
+msgstr "日期範圍篩選"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/vat_report_xlsx.py:0
+#, python-format
+msgid "Date to"
+msgstr "日期到"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
+#, python-format
+msgid "Debit"
+msgstr "借方"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
+#, python-format
+msgid "Description"
+msgstr "說明"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__tax_detail
+msgid "Detail Taxes"
+msgstr "稅務明細"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_account_financial_report_abstract_wizard__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_aged_partner_balance_xlsx__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_general_ledger_xlsx__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_journal_ledger_xlsx__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_open_items_xlsx__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_trial_balance_xlsx__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_vat_report_xlsx__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_abstract_report_xlsx__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_aged_partner_balance__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_general_ledger__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_journal_ledger__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_open_items__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_trial_balance__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_vat_report__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__display_name
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: account_financial_report
+#: model:ir.model.fields,help:account_financial_report.field_general_ledger_report_wizard__foreign_currency
+#: model:ir.model.fields,help:account_financial_report.field_open_items_report_wizard__foreign_currency
+#: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__foreign_currency
+msgid ""
+"Display foreign currency for move lines, unless account currency is not "
+"setup through chart of accounts will display initial and final balance in "
+"that currency."
+msgstr ""
+"顯示日記帳細項的外幣金額, 除非通過會計科目表設置帳戶幣種, 否則將顯示該幣種的"
+"初始餘額和最終結餘。"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__hide_parent_hierarchy_level
+msgid "Do not display parent levels"
+msgstr "不顯示上級階層"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+msgid ""
+"Due\n"
+"                        date"
+msgstr ""
+"截止\n"
+"                        日期"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#, python-format
+msgid "Due date"
+msgstr "到期日"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__date_to
+msgid "End Date"
+msgstr "終止日期"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__date_to
+msgid "End date"
+msgstr "結束日期"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_ending_cumul
+msgid ""
+"Ending\n"
+"                        balance"
+msgstr ""
+"期末\n"
+"                        餘額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_ending_cumul
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
+#, python-format
+msgid "Ending balance"
+msgstr "期末餘額"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
+msgid ""
+"Ending balance\n"
+"                        cur."
+msgstr ""
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#, python-format
+msgid "Entries sorted by"
+msgstr "分錄排序 按"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+#, python-format
+msgid "Entry"
+msgstr "項目"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/journal_ledger_wizard.py:0
+#, python-format
+msgid "Entry number"
+msgstr "分錄號碼"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.aged_partner_balance_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.journal_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.open_items_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.vat_report_wizard
+msgid "Export PDF"
+msgstr "導出為 PDF"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.aged_partner_balance_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.journal_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.open_items_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.vat_report_wizard
+msgid "Export XLSX"
+msgstr "導出EXL"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__account_ids
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__account_ids
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__account_ids
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__account_ids
+#: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
+msgid "Filter accounts"
+msgstr "篩選會計科目"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__analytic_tag_ids
+#: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
+msgid "Filter analytic tags"
+msgstr "篩選分析標籤"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__cost_center_ids
+#: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
+msgid "Filter cost centers"
+msgstr "篩選分析帳戶"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__account_journal_ids
+msgid "Filter journals"
+msgstr "篩選日記帳簿"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__partner_ids
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__partner_ids
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__partner_ids
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__partner_ids
+#: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
+msgid "Filter partners"
+msgstr "篩選對象別"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__foreign_currency
+msgid "Foreign Currency"
+msgstr "外幣金額"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+msgid "From:"
+msgstr "從："
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#, python-format
+msgid "From: %s To: %s"
+msgstr "從:%s 到:%s"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_account_group__complete_code
+msgid "Full Code"
+msgstr ""
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_account_group__complete_name
+msgid "Full Name"
+msgstr "完整名稱"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__fy_start_date
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__fy_start_date
+msgid "Fy Start Date"
+msgstr "財政年度開始日期"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: model:ir.actions.act_window,name:account_financial_report.act_action_general_ledger_wizard_partner_relation
+#: model:ir.actions.act_window,name:account_financial_report.action_general_ledger_wizard
+#: model:ir.actions.client,name:account_financial_report.action_report_general_ledger
+#: model:ir.actions.report,name:account_financial_report.action_print_report_general_ledger_html
+#: model:ir.actions.report,name:account_financial_report.action_print_report_general_ledger_qweb
+#: model:ir.ui.menu,name:account_financial_report.menu_general_ledger_wizard
+#, python-format
+msgid "General Ledger"
+msgstr "總分類帳"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_base
+msgid "General Ledger -"
+msgstr "總帳-"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_account_financial_report_general_ledger
+msgid "General Ledger Report"
+msgstr "總帳報表"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_general_ledger_report_wizard
+msgid "General Ledger Report Wizard"
+msgstr "總帳報表計算"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_a_f_r_report_general_ledger_xlsx
+msgid "General Ledger XLSL Report"
+msgstr "總帳報表-exl"
+
+#. module: account_financial_report
+#: model:ir.actions.report,name:account_financial_report.action_report_general_ledger_xlsx
+msgid "General Ledger XLSX"
+msgstr "總帳報表(EXL)"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
+msgid ""
+"General Ledger can be computed only if selected company have only one "
+"unaffected earnings account."
+msgstr "當選定的公司只有一個未列入計算的收入帳戶時, 才可以計算試算平衡。"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__group_option
+msgid "Group entries by"
+msgstr "分組分錄以"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+#, python-format
+msgid "Hide"
+msgstr "隱藏"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__hide_account_at_0
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__hide_account_at_0
+msgid "Hide account ending balance at 0"
+msgstr "隱藏-帳戶期末餘額為0"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__hide_account_at_0
+msgid "Hide accounts at 0"
+msgstr "隱藏-科目餘額為0"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__show_hierarchy_level
+msgid "Hierarchy Levels to display"
+msgstr "要顯示的層次結構級別"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__hierarchy_on
+msgid "Hierarchy On"
+msgstr "分層以"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_account_financial_report_abstract_wizard__id
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__id
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__id
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__id
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_aged_partner_balance_xlsx__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_general_ledger_xlsx__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_journal_ledger_xlsx__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_open_items_xlsx__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_trial_balance_xlsx__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_vat_report_xlsx__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_abstract_report_xlsx__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_aged_partner_balance__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_general_ledger__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_journal_ledger__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_open_items__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_trial_balance__id
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_vat_report__id
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__id
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_financial_report
+#: model:ir.model.fields,help:account_financial_report.field_account_account__centralized
+msgid ""
+"If flagged, no details will be displayed in the General Ledger report (the "
+"webkit one only), only centralized amounts per period."
+msgstr ""
+"如果已標記, 則不會在總帳報告中顯示任何詳細資訊 (僅 webkit 一個), 僅在每個期間"
+"的集中金額。"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
+msgid ""
+"Initial\n"
+"                        balance cur."
+msgstr ""
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
+msgid ""
+"Initial\n"
+"                    balance"
+msgstr ""
+"期初\n"
+"                    餘額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#, python-format
+msgid "Initial balance"
+msgstr ""
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/wizard/journal_ledger_wizard.py:0
+#: model:ir.actions.client,name:account_financial_report.action_report_journal_ledger
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__journal_ids
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+#, python-format
+msgid "Journal"
+msgstr "日記帳:"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_account_move_line
+msgid "Journal Item"
+msgstr "日記帳專案"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: model:ir.actions.act_window,name:account_financial_report.action_journal_ledger_wizard
+#: model:ir.actions.report,name:account_financial_report.action_print_journal_ledger_wizard_html
+#: model:ir.actions.report,name:account_financial_report.action_print_journal_ledger_wizard_qweb
+#: model:ir.ui.menu,name:account_financial_report.menu_journal_ledger_wizard
+#, python-format
+msgid "Journal Ledger"
+msgstr "總帳"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_base
+msgid "Journal Ledger -"
+msgstr "總帳-"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_account_financial_report_journal_ledger
+msgid "Journal Ledger Report"
+msgstr "日記帳報表"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_journal_ledger_report_wizard
+msgid "Journal Ledger Report Wizard"
+msgstr "日記帳報表計算"
+
+#. module: account_financial_report
+#: model:ir.actions.report,name:account_financial_report.action_report_journal_ledger_xlsx
+msgid "Journal Ledger XLSX"
+msgstr "日記帳(EXL)"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_a_f_r_report_journal_ledger_xlsx
+msgid "Journal Ledger XLSX Report"
+msgstr "日記帳報表-exl"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__journal_ids
+#: model_terms:ir.ui.view,arch_db:account_financial_report.journal_ledger_wizard
+#, python-format
+msgid "Journals"
+msgstr "日記帳"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_account_financial_report_abstract_wizard____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_aged_partner_balance_xlsx____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_general_ledger_xlsx____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_journal_ledger_xlsx____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_open_items_xlsx____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_trial_balance_xlsx____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_a_f_r_report_vat_report_xlsx____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_abstract_report_xlsx____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_aged_partner_balance____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_general_ledger____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_journal_ledger____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_open_items____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_trial_balance____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_report_account_financial_report_vat_report____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard____last_update
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard____last_update
+msgid "Last Modified on"
+msgstr "最後修改:"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__write_uid
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__write_uid
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__write_uid
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__write_uid
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__write_uid
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__write_uid
+msgid "Last Updated by"
+msgstr "最後更新："
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__write_date
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__write_date
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__write_date
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__write_date
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__write_date
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__write_date
+msgid "Last Updated on"
+msgstr "最後更新於"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_account_group__level
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+msgid "Level"
+msgstr "層級"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#, python-format
+msgid "Level %s"
+msgstr "第 %s 級"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__limit_hierarchy_level
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+#, python-format
+msgid "Limit hierarchy levels"
+msgstr "限制層次結構級別"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__move_target
+msgid "Move Target"
+msgstr "項目內容"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal
+msgid "Moves"
+msgstr "移動"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/vat_report_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_base
+#, python-format
+msgid "Name"
+msgstr "名称"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/vat_report_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_base
+#, python-format
+msgid "Net"
+msgstr "淨增"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#, python-format
+msgid "No"
+msgstr ""
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/journal_ledger_wizard.py:0
+#, python-format
+msgid "No group"
+msgstr "無分組"
+
+#. module: account_financial_report
+#: model:ir.model.fields.selection,name:account_financial_report.selection__trial_balance_report_wizard__hierarchy_on__none
+msgid "No hierarchy"
+msgstr "無層次結構"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+#, python-format
+msgid "No limit"
+msgstr "沒有限制"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/journal_ledger_wizard.py:0
+#, python-format
+msgid "Not Posted"
+msgstr "未過帳"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
+msgid "Not due"
+msgstr "未到期"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__not_only_one_unaffected_earnings_account
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__not_only_one_unaffected_earnings_account
+msgid "Not only one unaffected earnings account"
+msgstr "不只一個未列入計算之收入帳戶"
+
+#. module: account_financial_report
+#: model:ir.ui.menu,name:account_financial_report.menu_oca_reports
+msgid "OCA accounting reports"
+msgstr "OCA會計報表"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+#, python-format
+msgid "Older"
+msgstr "舊的"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: model:ir.actions.act_window,name:account_financial_report.action_open_items_wizard
+#: model:ir.actions.client,name:account_financial_report.action_report_open_items
+#: model:ir.actions.report,name:account_financial_report.action_print_report_open_items_html
+#: model:ir.actions.report,name:account_financial_report.action_print_report_open_items_qweb
+#: model:ir.ui.menu,name:account_financial_report.menu_open_items_wizard
+#, python-format
+msgid "Open Items"
+msgstr ""
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_base
+msgid "Open Items -"
+msgstr "應收付科目餘額表-"
+
+#. module: account_financial_report
+#: model:ir.actions.act_window,name:account_financial_report.act_action_open_items_wizard_partner_relation
+msgid "Open Items Partner"
+msgstr "客戶別應收付科目餘額表"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_account_financial_report_open_items
+msgid "Open Items Report"
+msgstr ""
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_open_items_report_wizard
+msgid "Open Items Report Wizard"
+msgstr "應收付科目餘額表計算"
+
+#. module: account_financial_report
+#: model:ir.actions.report,name:account_financial_report.action_report_open_items_xlsx
+msgid "Open Items XLSX"
+msgstr "應收付科目餘額表(EXL)"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_a_f_r_report_open_items_xlsx
+msgid "Open Items XLSX Report"
+msgstr ""
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.journal_ledger_wizard
+msgid "Options"
+msgstr "選項"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+#, python-format
+msgid "Original"
+msgstr "原始"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
+#, python-format
+msgid "Partner"
+msgstr "業務夥伴"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_partner_ending_cumul
+msgid ""
+"Partner\n"
+"                    cumul aged balance"
+msgstr "合作夥伴餘額帳齡報表"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#, python-format
+msgid "Partner Initial balance"
+msgstr "合作夥伴初始餘額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#, python-format
+msgid "Partner cumul aged balance"
+msgstr "合作夥伴累積帳齡餘額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_ending_cumul
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_ending_cumul
+#, python-format
+msgid "Partner ending balance"
+msgstr "合作夥伴期末餘額"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__payable_accounts_only
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__payable_accounts_only
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__payable_accounts_only
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__payable_accounts_only
+msgid "Payable Accounts Only"
+msgstr "僅應付科目"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_account_ending_cumul
+msgid "Percents"
+msgstr "比率"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_lines_header
+#, python-format
+msgid "Period balance"
+msgstr ""
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.journal_ledger_wizard
+msgid "Periods"
+msgstr "期間"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/journal_ledger_wizard.py:0
+#, python-format
+msgid "Posted"
+msgstr "已過帳"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#, python-format
+msgid "Rec."
+msgstr "應收項目"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__receivable_accounts_only
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__receivable_accounts_only
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__receivable_accounts_only
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__receivable_accounts_only
+msgid "Receivable Accounts Only"
+msgstr "僅應收科目"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+msgid ""
+"Ref -\n"
+"                        Label"
+msgstr ""
+"Ref -\n"
+"                        備註"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+#, python-format
+msgid "Ref - Label"
+msgstr "Ref 備註"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_move_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_lines
+#, python-format
+msgid "Residual"
+msgstr "殘留"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+#, python-format
+msgid "Show"
+msgstr ""
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__show_move_line_details
+msgid "Show Move Line Details"
+msgstr "顯示日記帳詳細資訊"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__show_partner_details
+msgid "Show Partner Details"
+msgstr "顯示合作夥伴詳細資訊"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__show_analytic_tags
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#, python-format
+msgid "Show analytic tags"
+msgstr "顯示分析標記"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__foreign_currency
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__foreign_currency
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__foreign_currency
+#, python-format
+msgid "Show foreign currency"
+msgstr "顯示外幣"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__sort_option
+msgid "Sort entries by"
+msgstr "分錄排序按"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_vat_report_wizard__date_from
+msgid "Start Date"
+msgstr ""
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__date_from
+msgid "Start date"
+msgstr "開始日"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#, python-format
+msgid "Tags"
+msgstr "標籤"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_aged_partner_balance_report_wizard__target_move
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__target_move
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__target_move
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__target_move
+msgid "Target Moves"
+msgstr "目標分錄"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_open_items_filters
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+#, python-format
+msgid "Target moves filter"
+msgstr "選擇範圍篩選"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/vat_report_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_base
+#, python-format
+msgid "Tax"
+msgstr "稅金"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_all_taxes
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_taxes
+msgid "Tax Amount"
+msgstr "稅金總額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#, python-format
+msgid "Tax Balance"
+msgstr "稅額計算"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#, python-format
+msgid "Tax Credit"
+msgstr "貸項稅額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#, python-format
+msgid "Tax Debit"
+msgstr "借項稅額"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/vat_report_xlsx.py:0
+#: model:ir.model.fields.selection,name:account_financial_report.selection__vat_report_wizard__based_on__taxgroups
+#, python-format
+msgid "Tax Groups"
+msgstr "稅務群組"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/vat_report_xlsx.py:0
+#: model:ir.model.fields.selection,name:account_financial_report.selection__vat_report_wizard__based_on__taxtags
+#, python-format
+msgid "Tax Tags"
+msgstr "稅務標籤"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/journal_ledger_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_lines
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+#, python-format
+msgid "Taxes"
+msgstr "稅金"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/general_ledger_wizard.py:0
+#, python-format
+msgid ""
+"The Company in the General Ledger Report Wizard and in Date Range must be "
+"the same."
+msgstr "\"總帳報告嚮導\"和\"日期範圍\"中的公司必須相同。"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/trial_balance_wizard.py:0
+#, python-format
+msgid ""
+"The Company in the Trial Balance Report Wizard and in Date Range must be the "
+"same."
+msgstr "\"試算表報告嚮導\"和\"日期範圍\"中的公司必須相同。"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/vat_report_wizard.py:0
+#, python-format
+msgid ""
+"The Company in the Vat Report Wizard and in Date Range must be the same."
+msgstr "營業稅報表嚮導和日期範圍中的公司必須相同。"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/trial_balance_wizard.py:0
+#, python-format
+msgid "The hierarchy level to filter on must be greater than 0."
+msgstr "要篩選的層次結構級別必須大於 0。"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_filters
+msgid "To"
+msgstr ""
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+msgid "To:"
+msgstr ""
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_account_ending_cumul
+msgid "Total"
+msgstr "總計"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model:ir.actions.act_window,name:account_financial_report.action_trial_balance_wizard
+#: model:ir.actions.client,name:account_financial_report.action_report_trial_balance
+#: model:ir.actions.report,name:account_financial_report.action_report_trial_balance_html
+#: model:ir.actions.report,name:account_financial_report.action_report_trial_balance_qweb
+#: model:ir.ui.menu,name:account_financial_report.menu_trial_balance_wizard
+#, python-format
+msgid "Trial Balance"
+msgstr "試算表"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_trial_balance_base
+msgid "Trial Balance -"
+msgstr "試算表-"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_account_financial_report_trial_balance
+msgid "Trial Balance Report"
+msgstr "試算表"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_trial_balance_report_wizard
+msgid "Trial Balance Report Wizard"
+msgstr "試算平衡表"
+
+#. module: account_financial_report
+#: model:ir.actions.report,name:account_financial_report.action_report_trial_balance_xlsx
+msgid "Trial Balance XLSX"
+msgstr "試算平衡表(EXL)"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_a_f_r_report_trial_balance_xlsx
+msgid "Trial Balance XLSX Report"
+msgstr ""
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
+msgid ""
+"Trial Balance can be computed only if selected company have only one "
+"unaffected earnings account."
+msgstr "當選定的公司只有一個未列入計算的收入帳戶時, 才可以計算試算平衡。"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__unaffected_earnings_account
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__unaffected_earnings_account
+msgid "Unaffected Earnings Account"
+msgstr "未列入計算的收入帳戶"
+
+#. module: account_financial_report
+#: model:ir.model.fields,help:account_financial_report.field_general_ledger_report_wizard__hide_account_at_0
+#: model:ir.model.fields,help:account_financial_report.field_open_items_report_wizard__hide_account_at_0
+msgid ""
+"Use this filter to hide an account or a partner with an ending balance at 0. "
+"If partners are filtered, debits and credits totals will not match the trial "
+"balance."
+msgstr ""
+"使用此篩選器可以隱藏帳戶或具有期末餘額為0的合作夥伴。如果篩選合作夥伴, 則借方"
+"和貸方合計將不匹配試算平衡。"
+
+#. module: account_financial_report
+#: model:ir.actions.act_window,name:account_financial_report.action_vat_report_wizard
+#: model:ir.actions.client,name:account_financial_report.action_report_vat_report
+#: model:ir.actions.report,name:account_financial_report.action_print_report_vat_report_html
+#: model:ir.actions.report,name:account_financial_report.action_print_report_vat_report_qweb
+#: model:ir.ui.menu,name:account_financial_report.menu_vat_report_wizard
+msgid "VAT Report"
+msgstr "營業稅報表"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_vat_report_base
+msgid "VAT Report -"
+msgstr "營業稅報表 -"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.vat_report_wizard
+msgid "VAT Report Options"
+msgstr "營業稅報表選項"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_vat_report_wizard
+msgid "VAT Report Wizard"
+msgstr "營業稅報表"
+
+#. module: account_financial_report
+#: model:ir.actions.report,name:account_financial_report.action_report_vat_report_xlsx
+msgid "VAT Report XLSX"
+msgstr "營業稅報表(EXL)"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/vat_report_xlsx.py:0
+#, python-format
+msgid "Vat Report"
+msgstr "營業稅報表"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_account_financial_report_vat_report
+msgid "Vat Report Report"
+msgstr ""
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_report_a_f_r_report_vat_report_xlsx
+msgid "Vat Report XLSX Report"
+msgstr "營業稅報表-exl"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.aged_partner_balance_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.journal_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.open_items_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.vat_report_wizard
+msgid "View"
+msgstr "檢視"
+
+#. module: account_financial_report
+#: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__hide_account_at_0
+msgid ""
+"When this option is enabled, the trial balance will not display accounts "
+"that have initial balance = debit = credit = end balance = 0"
+msgstr ""
+"啟用此選項後，試算表將不會顯示具有初始餘額 = 借方 + 貸方 = 最終餘額 = 0 的科"
+"目"
+
+#. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__with_account_name
+msgid "With Account Name"
+msgstr "以會計科目名稱"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger_xlsx.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
+#: code:addons/account_financial_report/report/trial_balance_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_general_ledger_filters
+#, python-format
+msgid "Yes"
+msgstr ""
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.aged_partner_balance_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.general_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.journal_ledger_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.open_items_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.trial_balance_wizard
+#: model_terms:ir.ui.view,arch_db:account_financial_report.vat_report_wizard
+msgid "or"
+msgstr ""
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal
+msgid "to"
+msgstr ""
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+msgid "width: 23.24%;"
+msgstr "寬度: 23.24%;"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+msgid "width: 23.78%;"
+msgstr "寬度: 23.78%;"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+msgid "width: 38.92%;"
+msgstr "寬度: 38.92%;"
+
+#. module: account_financial_report
+#: model_terms:ir.ui.view,arch_db:account_financial_report.report_journal_ledger_journal_table_header
+msgid "width: 8.11%;"
+msgstr "寬度: 8.11%;"

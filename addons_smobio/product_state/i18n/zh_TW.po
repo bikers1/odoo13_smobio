@@ -1,0 +1,173 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_state
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: \n"
+"Language: zh_TW\n"
+
+#. module: product_state
+#: model_terms:ir.ui.view,arch_db:product_state.view_product_state_form
+msgid "Code"
+msgstr "代號"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state__create_uid
+msgid "Created by"
+msgstr "建立者"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state__create_date
+msgid "Created on"
+msgstr "建立於"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state__description
+#: model_terms:ir.ui.view,arch_db:product_state.view_product_state_form
+msgid "Description"
+msgstr "說明"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: product_state
+#: model:product.state,name:product_state.product_state_end
+msgid "End of Lifecycle"
+msgstr "停止銷售"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state__id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_state
+#: model:product.state,name:product_state.product_state_draft
+msgid "In Development"
+msgstr "開發中"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state____last_update
+msgid "Last Modified on"
+msgstr "最後修改:"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state__write_uid
+msgid "Last Updated by"
+msgstr "最後更新："
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state__write_date
+msgid "Last Updated on"
+msgstr "最後更新於"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state__name
+msgid "Name"
+msgstr "名稱"
+
+#. module: product_state
+#: model:product.state,name:product_state.product_state_sellable
+msgid "Normal"
+msgstr "一般"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state__products_count
+msgid "Number of products"
+msgstr "商品數量"
+
+#. module: product_state
+#: model:product.state,name:product_state.product_state_obsolete
+msgid "Obsolete"
+msgstr "停用"
+
+#. module: product_state
+#: model:ir.actions.act_window,name:product_state.action_open_single_product_state
+#: model:ir.model,name:product_state.model_product_state
+#: model_terms:ir.ui.view,arch_db:product_state.product_state_search_form_view
+msgid "Product State"
+msgstr "產品狀態"
+
+#. module: product_state
+#: model:ir.model.constraint,message:product_state.constraint_product_state_code_unique
+msgid "Product State Code must be unique."
+msgstr "產品狀態代碼必須是唯一的。"
+
+#. module: product_state
+#: model:ir.ui.menu,name:product_state.menu_product_state
+msgid "Product States"
+msgstr "產品狀態"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_product__state
+#: model:ir.model.fields,field_description:product_state.field_product_template__state
+msgid "Product Status"
+msgstr "產品狀態"
+
+#. module: product_state
+#: model:ir.model,name:product_state.model_product_template
+msgid "Product Template"
+msgstr "商品模版"
+
+#. module: product_state
+#: model_terms:ir.ui.view,arch_db:product_state.view_product_state_form
+#: model_terms:ir.ui.view,arch_db:product_state.view_product_state_kanban
+msgid "Products"
+msgstr "產品"
+
+#. module: product_state
+#: model:ir.model.fields,help:product_state.field_product_product__product_state_id
+#: model:ir.model.fields,help:product_state.field_product_template__product_state_id
+msgid "Select a state for this product"
+msgstr "選擇此產品的狀態"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state__sequence
+msgid "Sequence"
+msgstr "序號"
+
+#. module: product_state
+#: model:ir.actions.act_window,name:product_state.action_product_state
+#: model:ir.model.fields,field_description:product_state.field_product_product__product_state_id
+#: model:ir.model.fields,field_description:product_state.field_product_template__product_state_id
+#: model_terms:ir.ui.view,arch_db:product_state.view_product_template_search_state
+msgid "State"
+msgstr "狀態"
+
+#. module: product_state
+#: model:ir.model.fields,field_description:product_state.field_product_state__code
+msgid "State Code"
+msgstr "狀態代碼"
+
+#. module: product_state
+#: model_terms:ir.ui.view,arch_db:product_state.view_product_state_form
+msgid "State Name"
+msgstr "狀態名稱"
+
+#. module: product_state
+#: model:ir.actions.act_window,name:product_state.action_open_state_products
+#: model:ir.model.fields,field_description:product_state.field_product_state__product_ids
+msgid "State Products"
+msgstr ""
+
+#. module: product_state
+#: model:ir.model.fields,help:product_state.field_product_state__sequence
+msgid "Used to order the States"
+msgstr ""
+
+#. module: product_state
+#: model_terms:ir.ui.view,arch_db:product_state.view_product_state_tree
+msgid "product.state"
+msgstr ""
