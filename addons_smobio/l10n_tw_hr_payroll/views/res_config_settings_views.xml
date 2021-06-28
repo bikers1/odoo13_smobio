@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.l10n.tw.hr.payroll</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="om_hr_payroll.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='hr_payroll_localization']" position="after">
+                <h2>台灣薪資計算</h2>
+                <div class="row mt16 o_settings_container" >
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_left_pane"/>
+                        <div class="o_setting_right_pane">
+                            <span class="fa fa-lg fa-building-o" title="Values set here are company-specific." groups="base.group_multi_company"/>
+                            <span class="o_form_label">勞健保計算相關設定</span>
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <label for="nhi_rate" class="col-md-3 o_light_label"/>
+                                    <field name="nhi_rate"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="nhi_host_rate" class="col-md-3 o_light_label"/>
+                                    <field name="nhi_host_rate"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="nhi_avg_f" class="col-md-3 o_light_label"/>
+                                    <field name="nhi_avg_f"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="nhi2_rate" class="col-md-3 o_light_label"/>
+                                    <field name="nhi2_rate"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="bli_rate" class="col-md-3 o_light_label"/>
+                                    <field name="bli_rate"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="bli2_rate" class="col-md-3 o_light_label"/>
+                                    <field name="bli2_rate"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="bli3_rate" class="col-md-3 o_light_label"/>
+                                    <field name="bli3_rate"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="bli4_rate" class="col-md-3 o_light_label"/>
+                                    <field name="bli4_rate"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

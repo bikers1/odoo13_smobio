@@ -1,0 +1,101 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* holidays_tier_validation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-26 20:33+0000\n"
+"PO-Revision-Date: 2020-08-26 20:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_view_form
+msgid ""
+"<i class=\"fa fa-info-circle\"/>This Time off needs to be\n"
+"                        validated."
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_allocation_view_form
+msgid ""
+"<i class=\"fa fa-info-circle\"/>This leave allocation needs to be\n"
+"                        validated."
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_allocation_view_form
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_view_form
+msgid "<i class=\"fa fa-thumbs-down\"/> Operation has been <b>rejected</b>."
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_allocation_view_form
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_view_form
+msgid "<i class=\"fa fa-thumbs-up\"/> Operation has been <b>validated</b>!"
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.view_hr_holidays_filter
+msgid "Leave allocation validated and ready to be confirmed"
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.view_hr_holidays_filter
+msgid "My leave allocation to review"
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.view_hr_holidays_filter
+msgid "Needs my Review"
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_allocation_view_form
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_view_form
+msgid "Reject"
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_allocation_view_form
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_view_form
+msgid "Request Validation"
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_allocation_view_form
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_view_form
+msgid "Restart Validation"
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model:ir.model,name:holidays_tier_validation.model_tier_definition
+msgid "Tier Definition"
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model:ir.model,name:holidays_tier_validation.model_hr_leave
+msgid "Time Off"
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model:ir.model,name:holidays_tier_validation.model_hr_leave_allocation
+msgid "Time Off Allocation"
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_allocation_view_form
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.hr_leave_view_form
+msgid "Validate"
+msgstr ""
+
+#. module: holidays_tier_validation
+#: model_terms:ir.ui.view,arch_db:holidays_tier_validation.view_hr_holidays_filter
+msgid "Validated"
+msgstr ""

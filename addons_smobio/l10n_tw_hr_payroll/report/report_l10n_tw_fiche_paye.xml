@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="report_l10n_tw_fiche_paye">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="web.internal_layout">
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <h2>薪資條</h2>
+                            <h4>計算期間 <span t-field="o.date_from"/> 至 <span t-field="o.date_to"/></h4>
+                        </div>
+                        <div class="col-xs-4 pull-right">
+                            <table class="table table-bordered" style="border: 2px solid black;">
+                                <tr>
+                                    <td>
+                                        <div t-field="o.employee_id.company_id.partner_id"  
+                                    t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}' />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div t-field="o.employee_id.address_home_id"
+                                          t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}'/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td>
+                                        <span>部門:</span><br/>
+                                        <span>眷屬加保人數:</span><br/>
+                                        <span>自願提繳退休金比率:</span><br/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.employee_id.department_id.name or '_'"/><br/>
+                                        <span t-esc="o.employee_id.nhi_family or '_'"/><br/>
+                                        <span t-esc="o.employee_id.bli_over_rate or '_'"/><br/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>薪資項目</th>
+                                <th>金額</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="get_payslip_lines(o.line_ids)" t-as="p">
+                                <td>
+                                     <span t-esc="p.name or ''"/>
+                                </td>
+                                <td>
+                                    <span t-esc="int(p.total) or 0" t-options='{"widget": "monetary", "display_currency": o.employee_id.company_id.currency_id}'/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     <div class="row">
+                        <div class="col-xs-12">
+                            <table class="table  table-round-border">
+                                <tr>
+                                    <td>
+                                        <div class="pull-right">         
+                                        <strong>實付薪資 </strong>: <span t-esc="get_total_by_rule_category(o, 'SUBSUM')" t-options='{"widget": "monetary", "display_currency": o.employee_id.company_id.currency_id}'/>
+                                        </div>
+                                        <div class="mt15">
+                                             <strong>付款方式</strong> : <span t-esc="o.payment_mode or ''"/> 
+                                        </div>
+                                        <div class="mt15">
+                                             <t t-if="o.paid is True"><strong>已支付</strong></t>
+                                        </div>
+                                        
+                                   </td>
+                                </tr>   
+                            </table>
+                        </div>
+                     </div>   
+
+                    <p class="mt32">為了保障您的權益，請妥善保存此薪資條，感謝您為本公司的付出!</p>
+                </div>
+            </t>
+        </t>
+    </t>
+</template>
+</odoo>

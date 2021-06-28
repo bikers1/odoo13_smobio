@@ -2,6 +2,14 @@
 <odoo>
     <data>
 
+        <report id="act_account_report_xlsx"
+                model="account.financial.report"
+                string="財務報告"
+                report_type="xlsx"
+                name="accounting_pdf_reports.account_report_xlsx"
+                file="財務報告"
+                attachment_use="False"/>
+
         <report
             id="action_report_general_ledger"
             model="account.report.general.ledger"

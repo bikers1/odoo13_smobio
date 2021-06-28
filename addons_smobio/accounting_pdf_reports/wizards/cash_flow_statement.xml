@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_cash_flow_statement0" model="account.financial.report">
+        <field name="name">Cash Flow Statement</field>
+        <field name="type">sum</field>
+    </record>
+
+    <record id="action_cash_flow_statement" model="ir.actions.act_window">
+        <field name="name">Cash Flow Statement</field>
+        <field name="res_model">accounting.report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="accounting_report_view"/>
+        <field name="target">new</field>
+        <field name="context" eval="{'default_account_report_id':ref('accounting_pdf_reports.account_cash_flow_statement0')}"/>
+    </record>
+
+    <menuitem id="menu_cash_flow_statement"
+              name="Cash Flow Statement"
+              sequence="6"
+              action="action_cash_flow_statement"
+              parent="menu_finance_legal_statement"
+              groups="account.group_account_user"/>
+</odoo>

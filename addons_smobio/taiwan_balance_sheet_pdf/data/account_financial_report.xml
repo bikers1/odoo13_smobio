@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="account.10xx_current_assets" model="account.financial.report">
+            <field name="position">L</field>
+        </record>
+        <record id="account.15xx_non_current_assets" model="account.financial.report">
+            <field name="position">L</field>
+        </record>
+        <record id="account.20xx_current_liabilities" model="account.financial.report">
+            <field name="position">R</field>
+        </record>
+        <record id="account.25xx_non_current_liabilities" model="account.financial.report">
+            <field name="position">R</field>
+        </record>
+        <record id="account.30xx_equity" model="account.financial.report">
+            <field name="position">R</field>
+        </record>
+        <record id="account.a_assets" model="account.financial.report">
+            <field name="position">L</field>
+        </record>
+        <record id="account.l_liabilities" model="account.financial.report">
+            <field name="position">R</field>
+        </record>
+        <record id="account.e_equity" model="account.financial.report">
+            <field name="position">R</field>
+        </record>
+        <record id="account.3990_net_income" model="account.financial.report">
+            <field name="position">R</field>
+        </record>
+        <record id="account.account_financial_report_31" model="account.financial.report">
+            <field name="position">L</field>
+        </record>
+        <record id="account.account_financial_report_32" model="account.financial.report">
+            <field name="position">R</field>
+        </record>
+        <record id="account.account_financial_report_40" model="account.financial.report">
+            <field name="position">R</field>
+        </record>
+     </data>
+</odoo>

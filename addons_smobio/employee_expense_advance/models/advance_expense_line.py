@@ -15,7 +15,7 @@ class AdvanceExpenseLine(models.Model):
             rec.total_amount = amount_line
 
     product_id = fields.Many2one('product.product', string='Expense')
-    product_uom_id = fields.Many2one('product.uom', string='Unit of Measure', required=True, readonly=True, states={'draft': [('readonly', False)], 'refused': [('readonly', False)]}, default=lambda self: self.env['product.uom'].search([], limit=1, order='id'))
+    product_uom_id = fields.Many2one('uom.uom', string='Unit of Measure', required=True, readonly=True, states={'draft': [('readonly', False)], 'refused': [('readonly', False)]}, default=lambda self: self.env['uom.uom'].search([], limit=1, order='id'))
     unit_amount = fields.Float(string='Unit Price',required=True,digits=dp.get_precision('Product Price'))
     quantity = fields.Float(required=True,digits=dp.get_precision('Product Unit of Measure'), default=1)
     description = fields.Char(string='Description', required=True)

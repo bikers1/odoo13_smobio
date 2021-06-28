@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+            id="action_report_financial_tw"
+            model="account.financial.report"
+            string="Taiwan Financial report"
+            menu="False"
+            report_type="qweb-pdf"
+            name="taiwan_balance_sheet_pdf.report_financial_tw"
+            file="taiwan_balance_sheet_pdf.report_financial_tw"/>
+
+        <report id="act_taiwan_balance_sheet_xlsx"
+                model="account.financial.report"
+                string="臺灣帳戶式資產負債表Excel"
+                report_type="xlsx"
+                name="taiwan_balance_sheet_pdf.taiwan_balance_sheet_xlsx"
+                file="臺灣帳戶式資產負債表"
+                attachment_use="False"/>
+
+        <report id="act_balance_sheet_xlsx"
+                model="account.financial.report"
+                string="報告式資產負債表Excel"
+                report_type="xlsx"
+                name="taiwan_balance_sheet_pdf.balance_sheet_xlsx"
+                file="報告式資產負債表"
+                attachment_use="False"/>
+    </data>
+</odoo>

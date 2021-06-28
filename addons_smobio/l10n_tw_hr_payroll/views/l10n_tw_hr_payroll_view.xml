@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="hr_contract_view_form_l10n_tw_payroll" model="ir.ui.view">
+            <field name="name">hr.contract.view.form.l10n.tw.payroll</field>
+            <field name="model">hr.contract</field>
+            <field name="priority">20</field>
+            <field name="inherit_id" ref="om_hr_payroll.hr_contract_form_inherit"/>
+            <field name="arch" type="xml">
+              <xpath expr="//group[@name='salary_and_advantages']" position="after">
+                <group string="勞健保計算" >
+                    <field name="nhi_amount"/>
+                    <field name="bli_amount"/>
+                    <field name="bli3_amount"/>
+                </group>
+                <group string="所得稅計算">
+                    <field name="withholding_tax"/> 
+                </group>
+                <group string="其他津貼">
+                    <field name="food_subsidy"/>
+                    <field name="allowance1"/>
+                    <field name="allowance2"/>
+                    <field name="allowance3"/>
+                    <field name="allowance4"/>
+                    <field name="allowance5"/>
+                </group>
+                <group string='其他備註'>
+                    <field name="contract_info"/> 
+                </group>
+            </xpath>
+            </field>
+        </record>
+
+        <record id="hr_payslip_form_l10n_tw_payroll" model="ir.ui.view">
+            <field name="name">hr.payslip.form.l10n.tw.payroll</field>
+            <field name="model">hr.payslip</field>
+            <field name="priority">20</field>
+            <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+            <data>
+                 <xpath expr="//field[@name='paid']" position="after">
+                     <field name="payment_mode"/>
+                 </xpath>
+                <xpath expr="//field[@name='worked_days_line_ids']" position="after">
+                    <group>
+                       <field name="work_day_nhi"/>
+                       <field name="work_day_wage"/>
+                       <field name="all_month_day"/>
+                    </group> 
+                </xpath>
+            </data>
+            </field>
+        </record>
+    
+        <record id="hr_employee_form__l10n_tw_view_for" model="ir.ui.view">
+            <field name="name">hr.employee.inherit.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr_contract.hr_hr_employee_view_form2"/>
+            <field name="priority">30</field>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='active_group']" position="after">
+                    <group string="薪資計算設定">
+                        <field name="bli_over_rate"/> 
+                        <field name="nhi_family"/>
+                        <field name="host_or_not"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    
+</odoo>

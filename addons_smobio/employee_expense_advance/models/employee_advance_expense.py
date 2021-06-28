@@ -97,7 +97,7 @@ class EmployeeAdvanceExpense(models.Model):
     def exit_cancel(self):
         self.state = 'cancel'
 
-    def get_confirm(self, vals):
+    def get_confirm(self):
         if not self.advance_expense_line_ids:
            raise Warning(_('Please add some advance expense lines.'))
         else:

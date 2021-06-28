@@ -158,7 +158,6 @@ msgstr "會計列印日記帳"
 #: model:ir.model,name:accounting_pdf_reports.model_account_financial_report
 #: model:ir.model.fields,field_description:accounting_pdf_reports.field_account_financial_report__children_ids
 #: model_terms:ir.ui.view,arch_db:accounting_pdf_reports.view_account_financial_report_form
-#: model_terms:ir.ui.view,arch_db:accounting_pdf_reports.view_account_financial_report_search
 #: model_terms:ir.ui.view,arch_db:accounting_pdf_reports.view_account_financial_report_tree
 msgid "Account Report"
 msgstr "財務報表"

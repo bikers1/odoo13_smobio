@@ -63,7 +63,7 @@ class ReportFinancial(models.AbstractModel):
                 res[report.id]['account'] = self._compute_account_balance(accounts)
                 for value in res[report.id]['account'].values():
                     for field in fields:
-                        res[report.id][field] += value.get(field)
+                        res[report. id][field] += value.get(field)
             elif report.type == 'account_report' and report.account_report_id:
                 # it's the amount of the linked report
                 res2 = self._compute_report_balance(report.account_report_id)
@@ -139,7 +139,6 @@ class ReportFinancial(models.AbstractModel):
                     if flag:
                         sub_lines.append(vals)
                 lines += sorted(sub_lines, key=lambda sub_line: sub_line['name'])
-        print("lines", lines)
         return lines
 
     @api.model
@@ -150,6 +149,12 @@ class ReportFinancial(models.AbstractModel):
         self.model = self.env.context.get('active_model')
         docs = self.env[self.model].browse(self.env.context.get('active_id'))
         report_lines = self.get_account_lines(data.get('form'))
+
+        cash_sheet = False
+        if '現金流量' in data.get('form').get('account_report_id')[1]:
+            report_lines = self.get_initial_balance(report_lines, data.get('form').get('date_from'), data.get('form'))
+            cash_sheet = True
+
         return {
             'doc_ids': self.ids,
             'doc_model': self.model,
@@ -157,4 +162,28 @@ class ReportFinancial(models.AbstractModel):
             'docs': docs,
             'time': time,
             'get_account_lines': report_lines,
+            'cash_sheet': cash_sheet
         }
+
+    def get_initial_balance(self, report_lines, date_from=None, form=None):
+        for line in report_lines:
+            if line.get('account_type') == 'account_type':
+                account_report_id = self.env['account.financial.report'].search([
+                    ('parent_id', '=', form.get('account_report_id')[0]), ('name', '=', line.get('name'))], limit=1)
+                initial_balance = 0
+                for row in account_report_id.account_type_ids:
+                    sql = """
+                    SELECT b.code, b.name, SUM(a.debit) AS debit, SUM(a.credit) AS credit FROM 
+                    (SELECT date, account_id, debit, credit FROM account_move_line WHERE parent_state = 'posted') AS a
+                    LEFT JOIN (SELECT id, name, code FROM account_account WHERE user_type_id = %s) AS b ON a.account_id = b.id
+                    WHERE b.code IS NOT NULL %s
+                    GROUP BY b.code, b.name
+                    ORDER BY b.code, b.name
+                    """ % (row.id, "AND a.date <= '%s'" % date_from if date_from else '')
+                    self._cr.execute(sql)
+                    result = self._cr.dictfetchall()
+                    for x in result:
+                        initial_balance += x['credit'] - x['debit'] if x['code'][0] in ['2'] else x['debit'] - x['credit']
+                if account_report_id.show_initial:
+                    line['balance'] = initial_balance
+        return report_lines

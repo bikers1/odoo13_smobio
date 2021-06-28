@@ -14,6 +14,7 @@
                         <field name="type"/>
                         <field name="sign"/>
                         <field name="style_overwrite"/>
+                        <field name="show_initial" widget="boolean_toggle"/>
                     </group>
                     <notebook attrs="{'invisible': [('type','not in',['accounts','account_type', 'account_report'])]}">
                         <page string="Report">

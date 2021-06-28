@@ -8,11 +8,11 @@
         <field name="view_mode">form</field>
         <field name="view_id" ref="accounting_report_view"/>
         <field name="target">new</field>
-        <field name="context" eval="{'default_account_report_id':ref('accounting_pdf_reports.account_financial_report_profitandloss0')}"/>
+        <field name="context" eval="{'default_account_report_id':ref('account.taiwan_income_statement')}"/>
     </record>
 
     <menuitem id="menu_account_report_pl"
-              name="Profit and Loss"
+              name="損益表"
               sequence="6"
               action="action_account_report_pl"
               parent="accounting_pdf_reports.menu_finance_legal_statement"

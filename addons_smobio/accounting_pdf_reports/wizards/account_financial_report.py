@@ -65,3 +65,4 @@ class AccountFinancialReport(models.Model):
         help="You can set up here the format you want this record to be displayed. "
              "If you leave the automatic formatting, it will be computed based on the "
              "financial reports hierarchy (auto-computed field 'level').")
+    show_initial = fields.Boolean(string='顯示期初金額')

@@ -23,6 +23,9 @@ class AccountingReport(models.TransientModel):
     date_from_cmp = fields.Date(string='Start Date')
     date_to_cmp = fields.Date(string='End Date')
     debit_credit = fields.Boolean(string='Display Debit/Credit Columns', help="This option allows you to get more details about the way your balances are computed. Because it is space consuming, we do not allow to use it while doing a comparison.")
+    target_move = fields.Selection([('posted', '所有已過帳分錄'),
+                                    ('all', '所有分錄'),
+                                    ], string='目標分錄', required=True, default='posted')
 
     def _build_comparison_context(self, data):
         result = {}
@@ -48,3 +51,27 @@ class AccountingReport(models.TransientModel):
     def _print_report(self, data):
         data['form'].update(self.read(['date_from_cmp', 'debit_credit', 'date_to_cmp', 'filter_cmp', 'account_report_id', 'enable_filter', 'label_filter', 'target_move'])[0])
         return self.env.ref('accounting_pdf_reports.action_report_financial').report_action(self, data=data, config=False)
+
+    def download_excel(self):
+        res = self.check_report()
+
+        report_lines = self.env['report.accounting_pdf_reports.report_financial'].get_account_lines(res['data']['form'])
+
+        cash_sheet = False
+        if '現金流量' in res['data']['form'].get('account_report_id')[1]:
+            report_lines = self.env['report.accounting_pdf_reports.report_financial'].get_initial_balance(report_lines, res['data']['form'].get('date_from'))
+            cash_sheet = True
+
+        return {'type': 'ir.actions.report',
+                'report_name': 'accounting_pdf_reports.account_report_xlsx',
+                'report_type': "xlsx",
+                'data': {
+                            'report_lines': report_lines,
+                            'date_from': self.date_from, 'date_to': self.date_to,
+                            'label_filter': self.label_filter,
+                            'enable_filter': self.enable_filter, 'debit_credit': self.debit_credit,
+                            'target_move': self.target_move,
+                            'cash_sheet': cash_sheet,
+                            'report_type_name': self.account_report_id.name
+                        }
+                }

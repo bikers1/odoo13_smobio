@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="action_dep_chart_overview" model="ir.actions.client">
+            <field name="name">Department Chart</field>
+            <field name="tag">hr_dep_chart_overview</field>
+            <field name="target">main</field>
+        </record>
+        <menuitem id="menu_dep_chart_overview_report" parent="hr.hr_menu_hr_reports" action="action_dep_chart_overview" sequence="2" />
+    </data>
+</odoo>
