@@ -98,7 +98,7 @@
         <field name="view_mode">form</field>
         <field name="view_id" ref="accounting_report_view"/>
         <field name="target">new</field>
-        <field name="context" eval="{'default_account_report_id':ref('account.taiwan_balance_sheet')}"/>
+<!--        <field name="context" eval="{'default_account_report_id':ref('account.taiwan_balance_sheet')}"/>-->
     </record>
 
     <menuitem id="menu_account_report_bs"

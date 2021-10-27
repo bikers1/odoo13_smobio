@@ -4,7 +4,7 @@ from odoo import api, fields, models
 
 class AccountReportExcel(models.AbstractModel):
     _name = 'report.accounting_pdf_reports.account_report_xlsx'
-    _inherit = 'report.report_xlsx.abstract'
+    _inherit = 'report.odoo_report_xlsx.abstract'
 
     def generate_xlsx_report(self, workbook, data, objects):
         format1 = workbook.add_format({'font_size': 11, 'align': 'vcenter', 'text_wrap': 1, 'bold': True, 'top': 1, 'left': 1, 'right': 1,'bottom': 1})  # 設定EXCEL儲存格式, 字體11, 垂直置中, 自動換行(text_wrap), 粗體,  上下左右邊框1px

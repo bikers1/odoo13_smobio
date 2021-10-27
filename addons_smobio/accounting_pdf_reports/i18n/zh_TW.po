@@ -127,7 +127,7 @@ msgstr "<strong>總計</strong>"
 #: model_terms:ir.ui.view,arch_db:accounting_pdf_reports.report_partnerledger
 #: model_terms:ir.ui.view,arch_db:accounting_pdf_reports.report_trialbalance
 msgid "Account"
-msgstr "帳戶"
+msgstr "科目"
 
 #. module: accounting_pdf_reports
 #: model:ir.model,name:accounting_pdf_reports.model_account_aged_trial_balance
@@ -778,7 +778,7 @@ msgstr "保留餘額符號"
 #. module: accounting_pdf_reports
 #: model_terms:ir.ui.view,arch_db:accounting_pdf_reports.account_aged_balance_view
 msgid "Print"
-msgstr "打印"
+msgstr "列印"
 
 #. module: accounting_pdf_reports
 #: model:ir.model.fields,help:accounting_pdf_reports.field_account_print_journal__amount_currency
