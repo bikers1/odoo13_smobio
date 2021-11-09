@@ -70,27 +70,25 @@ msgid "Active"
 msgstr "Actief"
 
 #. module: base_tier_validation
-#. openerp-web
-#: code:addons/base_tier_validation/static/src/xml/systray.xml:0
-#, fuzzy, python-format
-msgid "Activities"
-msgstr "Actief"
-
-#. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_search
 msgid "All"
 msgstr "Alle"
 
 #. module: base_tier_validation
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_definition__review_type__group
-msgid "Any user in a specific group"
-msgstr ""
+msgid "Any user in a specific group."
+msgstr "Elke gebruiker in een specifieke groep."
 
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__approve_sequence
 #: model:ir.model.fields,help:base_tier_validation.field_tier_review__approve_sequence
 msgid "Approval order by the specified sequence number"
 msgstr "Goedkeuringsvolgorde op basis van het opgegeven volgnummer"
+
+#. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__approve_sequence
+msgid "Approve Sequence"
+msgstr "Volgorde goedkeuren"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__approve_sequence
@@ -108,13 +106,6 @@ msgstr "Goedgekeurd"
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__can_review
 msgid "Can Review"
 msgstr "Kan beoordelen"
-
-#. module: base_tier_validation
-#: model:ir.model.fields,help:base_tier_validation.field_tier_review__can_review
-msgid ""
-"Can review will be marked if the review is pending and the\n"
-"        approve sequence has been achieved"
-msgstr ""
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.view_comment_wizard
@@ -145,7 +136,6 @@ msgstr "Opmerkingen"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__company_id
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__company_id
 msgid "Company"
 msgstr "Bedrijf"
 
@@ -164,6 +154,7 @@ msgid "Created on"
 msgstr "Aangemaakt door"
 
 #. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard__definition_ids
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__definition_type
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__definition_id
 msgid "Definition"
@@ -207,17 +198,6 @@ msgstr "Gedaan door"
 #, python-format
 msgid "Done by"
 msgstr "Gedaan door"
-
-#. module: base_tier_validation
-#: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_definition__review_type__field
-msgid "Field in related record"
-msgstr ""
-
-#. module: base_tier_validation
-#: code:addons/base_tier_validation/models/tier_review.py:0
-#, python-format
-msgid "Group %s"
-msgstr ""
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_search
@@ -298,6 +278,11 @@ msgid "Notify Reviewers on Creation"
 msgstr "Informeer beoordelaar bij het maken"
 
 #. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard__object
+msgid "Object"
+msgstr "Object"
+
+#. module: base_tier_validation
 #. openerp-web
 #: code:addons/base_tier_validation/static/src/xml/systray.xml:0
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__pending
@@ -351,7 +336,6 @@ msgstr "Res model"
 #. module: base_tier_validation
 #. openerp-web
 #: code:addons/base_tier_validation/static/src/xml/systray.xml:0
-#: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard__review_ids
 #, python-format
 msgid "Review"
 msgstr "Beoordeling"
@@ -361,12 +345,6 @@ msgstr "Beoordeling"
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__reviewer_id
 msgid "Reviewer"
 msgstr "Beoordelaar"
-
-#. module: base_tier_validation
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__reviewer_field_id
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__reviewer_field_id
-msgid "Reviewer field"
-msgstr ""
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__reviewer_group_id
@@ -393,7 +371,6 @@ msgstr "Beoordelingen"
 #. openerp-web
 #: code:addons/base_tier_validation/static/src/xml/tier_review_template.xml:0
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__sequence
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__sequence
 #, python-format
 msgid "Sequence"
 msgstr "Volgorde"
@@ -418,19 +395,19 @@ msgid "The operation is under validation."
 msgstr "De bewerking is onder validatie."
 
 #. module: base_tier_validation
-#: code:addons/base_tier_validation/models/tier_review.py:0
-#, python-format
-msgid "There are no res.users in the selected field"
-msgstr ""
-
-#. module: base_tier_validation
 #: code:addons/base_tier_validation/models/tier_validation.py:0
 #, python-format
 msgid ""
-"This action needs to be validated for at least one record. Reviews pending:\n"
-" - %s \n"
+"This action needs to be validated for at least one record. \n"
 "Please request a validation."
 msgstr ""
+"Deze actie moet voor ten minste één record gevalideerd worden.\n"
+"Vraag een validatie aan."
+
+#. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__sequence
+msgid "Tier"
+msgstr "Tier"
 
 #. module: base_tier_validation
 #: model:ir.actions.act_window,name:base_tier_validation.tier_definition_action
@@ -453,48 +430,14 @@ msgid "Tier Validation (abstract)"
 msgstr "Tier-validatie (abstract)"
 
 #. module: base_tier_validation
-#: model:mail.message.subtype,name:base_tier_validation.mt_tier_validation_accepted
-#, fuzzy
-msgid "Tier Validation Accepted Notification"
-msgstr "Tier-validatie (abstract)"
-
-#. module: base_tier_validation
-#: model:mail.message.subtype,name:base_tier_validation.mt_tier_validation_rejected
-#, fuzzy
-msgid "Tier Validation Rejected Notification"
-msgstr "Tier-validatie (abstract)"
-
-#. module: base_tier_validation
-#: model:mail.message.subtype,name:base_tier_validation.mt_tier_validation_requested
-msgid "Tier Validation Requested"
-msgstr ""
-
-#. module: base_tier_validation
 #: model:ir.ui.menu,name:base_tier_validation.menu_tier_confirmation
 msgid "Tier Validations"
 msgstr "Tier-validaties"
 
 #. module: base_tier_validation
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__todo_by
-msgid "Todo By"
-msgstr ""
-
-#. module: base_tier_validation
-#. openerp-web
-#: code:addons/base_tier_validation/static/src/xml/tier_review_template.xml:0
-#, python-format
-msgid "Todo by"
-msgstr ""
-
-#. module: base_tier_validation
 #: model:ir.model,name:base_tier_validation.model_res_users
 msgid "Users"
 msgstr "Gebruikers"
-
-#. module: base_tier_validation
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__valid_reviewer_field_ids
-msgid "Valid Reviewer Field"
-msgstr ""
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard__validate_reject
@@ -529,22 +472,3 @@ msgstr "Validaties"
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "e.g. Tier Validation for..."
 msgstr "bijv. Tier validatie voor..."
-
-#~ msgid "Any user in a specific group."
-#~ msgstr "Elke gebruiker in een specifieke groep."
-
-#~ msgid ""
-#~ "This action needs to be validated for at least one record. \n"
-#~ "Please request a validation."
-#~ msgstr ""
-#~ "Deze actie moet voor ten minste één record gevalideerd worden.\n"
-#~ "Vraag een validatie aan."
-
-#~ msgid "Tier"
-#~ msgstr "Tier"
-
-#~ msgid "Object"
-#~ msgstr "Object"
-
-#~ msgid "Approve Sequence"
-#~ msgstr "Volgorde goedkeuren"
