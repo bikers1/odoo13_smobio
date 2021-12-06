@@ -12,27 +12,30 @@ class Users(models.Model):
     @api.model
     def review_user_count(self):
         user_reviews = {}
-        to_review_docs = {}
-        for review in self.env.user.review_ids.filtered(
-            lambda r: r.status == "pending"
-        ):
-            record = review.env[review.model].browse(review.res_id)
-            can_review = record.with_user(self.env.user).can_review
-            if can_review:
-                if not user_reviews.get(review["model"]):
-                    user_reviews[review.model] = {
+        domain = [
+            ("status", "=", "pending"),
+            ("can_review", "=", True),
+            ("id", "in", self.env.user.review_ids.ids),
+        ]
+        review_groups = self.env["tier.review"].read_group(domain, ["model"], ["model"])
+        for review_group in review_groups:
+            model = review_group["model"]
+            reviews = self.env["tier.review"].search(review_group.get("__domain"))
+            if reviews:
+                records = (
+                    self.env[model]
+                    .with_user(self.env.user)
+                    .search([("id", "in", reviews.mapped("res_id"))])
+                    .filtered(lambda x: not x.rejected and x.can_review)
+                )
+                if len(records):
+                    record = self.env[model]
+                    user_reviews[model] = {
                         "name": record._description,
-                        "model": review.model,
-                        "icon": modules.module.get_module_icon(
-                            self.env[review.model]._original_module
-                        ),
-                        "pending_count": 0,
+                        "model": model,
+                        "icon": modules.module.get_module_icon(record._original_module),
+                        "pending_count": len(records),
                     }
-                docs = to_review_docs.get(review.model)
-                if (docs and record not in docs) or not docs:
-                    user_reviews[review.model]["pending_count"] += 1
-                review.can_review = True
-                to_review_docs.setdefault(review.model, []).append(record)
         return list(user_reviews.values())
 
     @api.model
@@ -44,4 +47,9 @@ class Users(models.Model):
             r["display_status"] = dict(
                 review_obj.fields_get("status")["status"]["selection"]
             ).get(r.get("status"))
+            # Convert to datetime timezone
+            if r["reviewed_date"]:
+                r["reviewed_date"] = fields.Datetime.context_timestamp(
+                    self, r["reviewed_date"]
+                )
         return res

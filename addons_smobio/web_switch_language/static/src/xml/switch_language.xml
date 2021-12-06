@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="SwitchLanguageMenu">
+        <li class="o_switch_language_menu">
+            <a class="dropdown o_switch_language" data-toggle="dropdown" data-display="static" href="#" title="Switch Language">
+                <span t-attf-class="#{widget.isMobile ? 'fa fa-globe' : 'oe_topbar_name'}"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" role="menu"/>
+        </li>
+    </t>
+</templates>

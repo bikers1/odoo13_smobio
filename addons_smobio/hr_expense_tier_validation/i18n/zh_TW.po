@@ -1,0 +1,87 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_expense_tier_validation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: \n"
+"Language: zh_TW\n"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.view_hr_expense_sheet_form
+msgid ""
+"<i class=\"fa fa-info-circle\"/>\n"
+"                        This expense report needs to be validated."
+msgstr ""
+"<i class=\"fa fa-info-circle\"/>\n"
+"                        此費用報告需審批"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.view_hr_expense_sheet_form
+msgid "<i class=\"fa fa-thumbs-down\"/> Operation has been <b>rejected</b>."
+msgstr "<i class=\"fa fa-thumbs-down\"/> 單據操作審批已 <b>拒絕</b>。"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.view_hr_expense_sheet_form
+msgid "<i class=\"fa fa-thumbs-up\"/> Operation has been <b>validated</b>!"
+msgstr "<i class=\"fa fa-thumbs-up\"/> 單據操作審批已 <b>通過</b>！"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model,name:hr_expense_tier_validation.model_hr_expense_sheet
+msgid "Expense Report"
+msgstr "費用報告"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.hr_expense_sheet_view_search
+msgid "Expense report validated and ready to be approved"
+msgstr "費用報告已批准並等待批准"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.hr_expense_sheet_view_search
+msgid "My Expense report to review"
+msgstr "待我批准的費用報告"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.hr_expense_sheet_view_search
+msgid "Needs my Review"
+msgstr "需要我審批"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.view_hr_expense_sheet_form
+msgid "Reject"
+msgstr "拒绝"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.view_hr_expense_sheet_form
+msgid "Request Validation"
+msgstr "提交審批"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.view_hr_expense_sheet_form
+msgid "Restart Validation"
+msgstr "撤回審批"
+
+#. module: hr_expense_tier_validation
+#: model:ir.model,name:hr_expense_tier_validation.model_tier_definition
+msgid "Tier Definition"
+msgstr "節點定義"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.view_hr_expense_sheet_form
+msgid "Validate"
+msgstr "验证"
+
+#. module: hr_expense_tier_validation
+#: model_terms:ir.ui.view,arch_db:hr_expense_tier_validation.hr_expense_sheet_view_search
+msgid "Validated"
+msgstr "已通過"

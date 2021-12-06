@@ -6,7 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-07-19 03:49+0800\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2021-11-09 09:35+0800\n"
 "Last-Translator: Dong <dong@freshoo.cn>\n"
 "Language-Team: none\n"
 "Language: zh_TW\n"
@@ -14,8 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.3.1\n"
-"POT-Creation-Date: \n"
+"X-Generator: Poedit 3.0\n"
 
 #. module: base_tier_validation
 #. openerp-web
@@ -71,13 +71,23 @@ msgid "Active"
 msgstr "有效"
 
 #. module: base_tier_validation
+#. openerp-web
+#: code:addons/base_tier_validation/static/src/xml/systray.xml:0
+#, fuzzy, python-format
+#| msgid "Active"
+msgid "Activities"
+msgstr "有效"
+
+#. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_search
 msgid "All"
 msgstr "所有"
 
 #. module: base_tier_validation
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_definition__review_type__group
-msgid "Any user in a specific group."
+#, fuzzy
+#| msgid "Any user in a specific group."
+msgid "Any user in a specific group"
 msgstr "指定權限組"
 
 #. module: base_tier_validation
@@ -85,11 +95,6 @@ msgstr "指定權限組"
 #: model:ir.model.fields,help:base_tier_validation.field_tier_review__approve_sequence
 msgid "Approval order by the specified sequence number"
 msgstr "審批按指定序號排序"
-
-#. module: base_tier_validation
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__approve_sequence
-msgid "Approve Sequence"
-msgstr "批准順序"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__approve_sequence
@@ -107,6 +112,13 @@ msgstr "已批准"
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__can_review
 msgid "Can Review"
 msgstr "待批准"
+
+#. module: base_tier_validation
+#: model:ir.model.fields,help:base_tier_validation.field_tier_review__can_review
+msgid ""
+"Can review will be marked if the review is pending and the\n"
+"        approve sequence has been achieved"
+msgstr ""
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.view_comment_wizard
@@ -137,6 +149,7 @@ msgstr "意見"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__company_id
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__company_id
 msgid "Company"
 msgstr "公司"
 
@@ -155,7 +168,6 @@ msgid "Created on"
 msgstr "創建時間"
 
 #. module: base_tier_validation
-#: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard__definition_ids
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__definition_type
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__definition_id
 msgid "Definition"
@@ -199,6 +211,18 @@ msgstr "審核人"
 #, python-format
 msgid "Done by"
 msgstr "審核人"
+
+#. module: base_tier_validation
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_definition__review_type__field
+msgid "Field in related record"
+msgstr ""
+
+#. module: base_tier_validation
+#: code:addons/base_tier_validation/models/tier_review.py:0
+#, fuzzy, python-format
+#| msgid "Group By"
+msgid "Group %s"
+msgstr "分組"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_search
@@ -278,11 +302,6 @@ msgid "Notify Reviewers on Creation"
 msgstr "創建時通知審核者"
 
 #. module: base_tier_validation
-#: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard__object
-msgid "Object"
-msgstr "對像"
-
-#. module: base_tier_validation
 #. openerp-web
 #: code:addons/base_tier_validation/static/src/xml/systray.xml:0
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__pending
@@ -336,6 +355,7 @@ msgstr "資源模型"
 #. module: base_tier_validation
 #. openerp-web
 #: code:addons/base_tier_validation/static/src/xml/systray.xml:0
+#: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard__review_ids
 #, python-format
 msgid "Review"
 msgstr "審批"
@@ -344,6 +364,14 @@ msgstr "審批"
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__reviewer_id
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__reviewer_id
 msgid "Reviewer"
+msgstr "審批人"
+
+#. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__reviewer_field_id
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__reviewer_field_id
+#, fuzzy
+#| msgid "Reviewer"
+msgid "Reviewer field"
 msgstr "審批人"
 
 #. module: base_tier_validation
@@ -371,6 +399,7 @@ msgstr "審批"
 #. openerp-web
 #: code:addons/base_tier_validation/static/src/xml/tier_review_template.xml:0
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__sequence
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__sequence
 #, python-format
 msgid "Sequence"
 msgstr "序號"
@@ -395,19 +424,25 @@ msgid "The operation is under validation."
 msgstr "該操作正在審批中。"
 
 #. module: base_tier_validation
-#: code:addons/base_tier_validation/models/tier_validation.py:0
+#: code:addons/base_tier_validation/models/tier_review.py:0
 #, python-format
+msgid "There are no res.users in the selected field"
+msgstr ""
+
+#. module: base_tier_validation
+#: code:addons/base_tier_validation/models/tier_validation.py:0
+#, fuzzy, python-format
+#| msgid ""
+#| "This action needs to be validated for at least one record. \n"
+#| "Please request a validation."
 msgid ""
-"This action needs to be validated for at least one record. \n"
+"This action needs to be validated for at least one record. Reviews "
+"pending:\n"
+" - %s \n"
 "Please request a validation."
 msgstr ""
 "此操作需要至少對一條記錄進行審批。\n"
 "請申請審批。"
-
-#. module: base_tier_validation
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__sequence
-msgid "Tier"
-msgstr "層級"
 
 #. module: base_tier_validation
 #: model:ir.actions.act_window,name:base_tier_validation.tier_definition_action
@@ -430,14 +465,52 @@ msgid "Tier Validation (abstract)"
 msgstr "審批層級（抽像）"
 
 #. module: base_tier_validation
+#: model:mail.message.subtype,name:base_tier_validation.mt_tier_validation_accepted
+#, fuzzy
+#| msgid "Tier Validation (abstract)"
+msgid "Tier Validation Accepted Notification"
+msgstr "審批層級（抽像）"
+
+#. module: base_tier_validation
+#: model:mail.message.subtype,name:base_tier_validation.mt_tier_validation_rejected
+#, fuzzy
+#| msgid "Tier Validation (abstract)"
+msgid "Tier Validation Rejected Notification"
+msgstr "審批層級（抽像）"
+
+#. module: base_tier_validation
+#: model:mail.message.subtype,name:base_tier_validation.mt_tier_validation_requested
+#, fuzzy
+#| msgid "Tier Validations"
+msgid "Tier Validation Requested"
+msgstr "審批層級"
+
+#. module: base_tier_validation
 #: model:ir.ui.menu,name:base_tier_validation.menu_tier_confirmation
 msgid "Tier Validations"
 msgstr "審批層級"
 
 #. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__todo_by
+msgid "Todo By"
+msgstr "應審核人"
+
+#. module: base_tier_validation
+#. openerp-web
+#: code:addons/base_tier_validation/static/src/xml/tier_review_template.xml:0
+#, python-format
+msgid "Todo by"
+msgstr "應審核人"
+
+#. module: base_tier_validation
 #: model:ir.model,name:base_tier_validation.model_res_users
 msgid "Users"
 msgstr "使用者"
+
+#. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__valid_reviewer_field_ids
+msgid "Valid Reviewer Field"
+msgstr "审查是必填字段。"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard__validate_reject
@@ -472,6 +545,15 @@ msgstr "審批"
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "e.g. Tier Validation for..."
 msgstr "例如：審批層級用於..."
+
+#~ msgid "Approve Sequence"
+#~ msgstr "批准順序"
+
+#~ msgid "Object"
+#~ msgstr "對像"
+
+#~ msgid "Tier"
+#~ msgstr "層級"
 
 #~ msgid "Formula"
 #~ msgstr "公式"

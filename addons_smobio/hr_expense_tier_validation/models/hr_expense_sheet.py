@@ -9,3 +9,9 @@ class HrExpenseSheet(models.Model):
     _inherit = ["hr.expense.sheet", "tier.validation"]
     _state_from = ["draft"]
     _state_to = ["submit", "approve", "post", "done"]
+
+    def action_submit_sheet(self):
+        super(HrExpenseSheet, self).action_submit_sheet()
+        if self.validated:
+            self.write({'state': 'approve'})
+            self.activity_update()
