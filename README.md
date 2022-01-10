@@ -20,6 +20,8 @@
 - (oca)Date Range (財務報表中 日期的快速下拉)
 - switch_user_app (切換使用者，配合簽核使用)
 ![image](資料庫/switch_user_app.png)
+- Purchase Request   (請購申請)
+- Purchase Request Validation  (請購申請簽核)
 ### 佈景
 - Dependency for backend_theme_v13
 
