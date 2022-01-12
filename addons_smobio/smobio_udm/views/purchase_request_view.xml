@@ -7,6 +7,13 @@
         <field name="model">purchase.request</field>
         <field name="inherit_id" ref="purchase_request.view_purchase_request_form" />
         <field name="arch" type="xml">
+            <button name="button_approved" position="attributes">
+                <attribute
+                    name="attrs"
+                >{'invisible': [('state', 'not in', ['draft'])]}</attribute>
+                <attribute name="string">提交管理員</attribute>
+                <attribute  name="groups">base.group_user</attribute>
+            </button>
             <xpath expr="//field[@name='line_ids']" position="after">
                 <group>
                     <group>

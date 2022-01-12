@@ -28,8 +28,10 @@
             </button>
 
             <button name="get_apprv_hr_manager" position="attributes">
+                <attribute name="string">提交管理員</attribute>
                 <attribute name="states">draft,confirm</attribute>
-                <attribute name="groups">hr_expense.group_hr_expense_user,account.group_account_user</attribute>
+<!--                <attribute name="groups">hr_expense.group_hr_expense_user,account.group_account_user</attribute>-->
+                <attribute name="groups">base.group_user</attribute>
             </button>
 
 
