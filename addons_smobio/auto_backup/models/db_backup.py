@@ -3,25 +3,16 @@
 import os
 import datetime
 import time
-import socket
+import shutil
+import json
+import tempfile
 
 from odoo import models, fields, api, tools, _
-from odoo.exceptions import Warning
+from odoo.exceptions import Warning, AccessDenied
 import odoo
 
 import logging
 _logger = logging.getLogger(__name__)
-import shutil
-import json
-import tempfile
-from odoo.exceptions import AccessDenied
-
-
-try:
-    from xmlrpc import client as xmlrpclib
-except ImportError:
-    import xmlrpclib
-
 
 try:
     import paramiko
@@ -136,8 +127,6 @@ class DbBackup(models.Model):
             # Create name for dumpfile.
             bkp_file = '%s_%s.%s' % (time.strftime('%Y_%m_%d_%H_%M_%S'), rec.name, rec.backup_type)
             file_path = os.path.join(rec.folder, bkp_file)
-            uri = 'http://' + rec.host + ':' + rec.port
-            bkp = ''
             fp = open(file_path, 'wb')
             try:
                 # try to backup database and write it away
@@ -209,6 +198,7 @@ class DbBackup(models.Model):
                     # Navigate in to the correct folder.
                     sftp.chdir(path_to_write_to)
 
+                    _logger.debug("Checking expired files")
                     # Loop over all files in the directory from the back-ups.
                     # We will check the creation date of every back-up.
                     for file in sftp.listdir(path_to_write_to):
@@ -216,7 +206,7 @@ class DbBackup(models.Model):
                             # Get the full path
                             fullpath = os.path.join(path_to_write_to, file)
                             # Get the timestamp from the file on the external server
-                            timestamp = sftp.stat(fullpath).st_atime
+                            timestamp = sftp.stat(fullpath).st_mtime
                             createtime = datetime.datetime.fromtimestamp(timestamp)
                             now = datetime.datetime.now()
                             delta = now - createtime
@@ -224,13 +214,19 @@ class DbBackup(models.Model):
                             # on the Odoo form it will be removed.
                             if delta.days >= rec.days_to_keep_sftp:
                                 # Only delete files, no directories!
-                                if sftp.isfile(fullpath) and (".dump" in file or '.zip' in file):
+                                if (".dump" in file or '.zip' in file):
                                     _logger.info("Delete too old file from SFTP servers: " + file)
                                     sftp.unlink(file)
                     # Close the SFTP session.
                     sftp.close()
+                    s.close()
                 except Exception as e:
-                    _logger.debug('Exception! We couldn\'t back up to the FTP server..')
+                    try:
+                        sftp.close()
+                        s.close()
+                    except:
+                        pass
+                    _logger.error('Exception! We couldn\'t back up to the FTP server. Here is what we got back instead: %s' % str(e))
                     # At this point the SFTP backup failed. We will now check if the user wants
                     # an e-mail notification about this.
                     if rec.send_mail_sftp_fail:
