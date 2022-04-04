@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<odoo>
+        <!-- Dev Advance Salary Form View-->
+        <record id="view_dev_overtime_request_form" model="ir.ui.view">
+	        <field name="name">view.dev.overtime.request.form</field>
+	        <field name="model">dev.overtime.request</field>
+	        <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="overtime_request" states="draft" string="Send Request" class="btn-primary" type="object" groups="base.group_user"/>
+                        <button name="approve_request" states="request" string="Approve Request" class="btn-primary" type="object" groups="overtime_taiwan.group_overtime_department_manager"/>
+                        <button name="reject_salary_request" states="request" string="Reject Request" class="btn-primary" type="object" groups="overtime_taiwan.group_overtime_department_manager"/>
+                        
+                        <button name="set_to_draft" states="reject" string="Set to Draft" class="btn-primary" type="object" groups="hr.group_hr_user"/>
+                        <button name="set_to_cancel" states="reject" string="Cancel" class="btn-primary" type="object" groups="hr.group_hr_user"/>
+                        
+                        <button name="confirm_request" states="approval" string="Confirm" class="btn-primary" type="object" groups="om_hr_payroll.group_hr_payroll_manager"/>
+                        
+                        <button name="reject_salary_request" states="approval" string="Reject Request" class="btn-primary" type="object" groups="om_hr_payroll.group_hr_payroll_manager"/>
+                        
+                        <button name="set_to_done" states="hr_confirm" string="Done" class="btn-primary" type="object" groups="om_hr_payroll.group_hr_payroll_manager"/>
+
+                        <button name="set_to_hr_confirm" states="done" string="回到人資作業" class="btn-primary" type="object" groups="om_hr_payroll.group_hr_payroll_manager"/>
+                        
+                        <field name="state" widget="statusbar" statusbar_visible="draft,request,approval,hr_approval,done"/>
+                    </header>
+                    <sheet>
+                        <h2><field name="name" nolabel="1" readonly="1"/></h2>
+                        <group>
+                            <group>
+                                <field name="employee_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="dept_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="manager_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="hour" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="date" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="confirm_date" readonly="1" />
+                                <field name="comfirm_manager" readonly="1" />
+                                <field name="per_hour_amount" invisible="1"/>
+                                <field name="user_id" invisible="1"/>
+                                <field name="payslip_id" invisible="1"/>
+                            </group>
+                        </group>
+                        <label for="reason" class="oe_edit_only"/>
+                        <field name="reason" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <notebook groups="hr.group_hr_manager">
+                            <page name='hr_operation' string='加班查核作業'>
+                                <button name="loaded_attendance" type="object" class="oe_highlight" string="載入出勤紀錄" groups="om_hr_payroll.group_hr_payroll_manager" attrs="{'invisible':[('state','=','draft')]}"/>
+                                <group groups="hr.group_hr_manager" attrs="{'invisible':[('state','=','draft')]}">
+                                    <field name="attendance_ids" options="{'no_open':True,'no_create':1,'no_create_edit':1}">
+                                        <tree create="false" delete="false" editable="false">
+                                            <field name="check_in" string="上班時間" readonly="1"/>
+                                            <field name="check_out" string="下班時間" readonly="1"/>
+                                            <!--需要另外安裝模組hr_attendance_autoclose才能有工作時數-->
+                                            <!--<field name="open_worked_hours" string="工作時數" readonly="1"/>-->
+                                            <!--需要另外安裝模組hr_attendance_reason才能有出勤異常原因-->
+                                            <!--<field name="attendance_reason_ids" string="異常原因" readonly="1" widget="many2many_tags"/>-->
+                                        </tree>
+                                    </field>
+                                    <field name='check_meno'/>
+                                </group>
+                            </page>
+                            <page name='hr_overtime_end' string='加班處理作業'>
+                                <group attrs="{'invisible':[('state','=','draft')]}" string='加班工時輸入'>
+                                    <field name="pay_1_33_hours" attrs="{'readonly':[('state','!=','hr_confirm')]}"/>
+                                    <field name="pay_1_67_hours" attrs="{'readonly':[('state','!=','hr_confirm')]}"/>
+                                    <field name="pay_2_hours" attrs="{'readonly':[('state','!=','hr_confirm')]}"/>
+                                </group>
+                                <group attrs="{'invisible':[('state','=','draft')]}" string='加班補休發放'>
+                                    <button name="holidays_arrange" states="hr_confirm" string="補休發放" class="btn-primary" type="object"/>
+                                    <field name="holidays_id" attrs="{'readonly':[('state','!=','hr_confirm')]}"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+                   	        
+	        </field>
+        </record>
+        <!-- Dev Advance Salary Tree View-->
+        <record id="view_dev_overtime_request_tree" model="ir.ui.view">
+	        <field name="name">view.dev.overtime.request.tree</field>
+	        <field name="model">dev.overtime.request</field>
+	        <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="employee_id" />    
+                    <field name="date"/>
+                    <field name="hour"/>
+                    <field name="state"/>
+                    <field name="pay_1_33_hours" sum="Total" groups="om_hr_payroll.group_hr_payroll_manager"/>
+                    <field name="pay_1_67_hours" sum="Total" groups="om_hr_payroll.group_hr_payroll_manager"/>
+                    <field name="pay_2_hours" sum="Total" groups="om_hr_payroll.group_hr_payroll_manager"/>
+                </tree>
+	        </field>
+        </record>
+        
+        
+        <record id="view_dev_overtime_request_filter" model="ir.ui.view">
+            <field name="name">dev.overtime.request.filter</field>
+            <field name="model">dev.overtime.request</field>
+            <field name="arch" type="xml">
+                <search string="Overtime Request">
+                    <field name="name" string="Name" filter_domain="[('name','ilike',self)]"/>
+                    <field name="date"/>
+                    <field name="employee_id"/>
+                    <filter string="我的加班單" name="my_overtime" domain="[('employee_id.user_id', '=', uid)]"/>
+                    <separator/>
+                    <filter string="草稿加班單" name="new" domain="[('state', '=', 'draft')]"/>
+                    <filter string="待主管審核" name="new" domain="[('state', '=', 'request')]"/>
+                    <filter string="待人資查核" name="new" domain="[('state', '=', 'approvel')]"/>
+                    <filter string="待人資作業" name="new" domain="[('state', '=', 'hr_confirm')]"/>
+                    <filter string="已完成作業" name="new" domain="[('state', '=', 'done')]"/>
+                    <filter string="已退回加班單" name="new" domain="[('state', '=', 'reject')]"/>
+                    <filter string="已取消加班單" name="new" domain="[('state', '=', 'cancel')]"/>
+                    <separator/>
+                    <filter string="本部門加班單" name="my_dep_overtime" domain="[('employee_id.parent_id.user_id', '=', uid)]" groups="overtime_taiwan.group_overtime_department_manager"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Employees" name="employee_id" context="{'group_by':'employee_id'}"/>
+                        <filter string="Date" name="date" context="{'group_by':'date'}"/>
+                        <filter string="States" name="state" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        
+        <!-- Dev Advance Salary Action-->
+        <record id="action_dev_overtime_request" model="ir.actions.act_window">
+            <field name="name">Overtime Request</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">dev.overtime.request</field>
+            <field name="view_mode">tree,form</field>
+	    </record>
+
+        <record id="inherit_hr_leave_allocation_view_form_manager" model="ir.ui.view">
+            <field name="name">Inherit from Leave Request</field>
+            <field name="model">hr.leave.allocation</field>
+            <field name="inherit_id" ref="hr_holidays.hr_leave_allocation_view_form_manager"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='number_of_hours_display']" position="attributes">
+                        <attribute name="invisible">False</attribute>
+                    </xpath>
+                    <xpath expr="//field[@name='number_of_hours_display']" position="after">
+                        <field name="overtime_to_allocate_leave" string='加班轉補休' class="oe_inline"/>
+                        <field name="overtime_request_id" invisible="1" />
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+        <record id="inherit_res_company_form" model="ir.ui.view">
+            <field name="name">inherit res company form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//form/sheet/notebook/page" position="after">
+                        <page string="HR 設置">
+                            <group>
+                                <group>
+                                    <field name="compensatory_leave_id" groups="om_hr_payroll.group_hr_payroll_manager"/>
+                                </group>
+                            </group>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+        
+    <!-- Dev Advance Salary Menu-->
+    
+    <menuitem name="Overtime Request" parent="hr.menu_hr_root" id="menu_main_overtime_request" sequence="3"/>
+    <menuitem name="Overtime Request" 
+            id="menu_dev_overtime_request" parent="overtime_taiwan.menu_main_overtime_request" sequence="1" action="action_dev_overtime_request"/>
+
+</odoo>

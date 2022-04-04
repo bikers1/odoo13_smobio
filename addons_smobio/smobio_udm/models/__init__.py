@@ -5,3 +5,4 @@ from . import purchase_request
 from . import hr_expense_sheet
 from . import employee_advance_expense
 from . import tier_definition
+from . import sale_order

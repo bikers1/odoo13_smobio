@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="dev_hr_payslip_overtime_inherit_form" model="ir.ui.view">
+         <field name="name">dev.hr.payslip.overtime.inheri.form</field>
+         <field name="model">hr.payslip</field>
+         <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_form"/>
+         <field name="arch" type="xml">
+            <xpath expr="//field[@name='credit_note']" position="after">
+                <field name="overtime_req_ids" widget="many2many_tags" invisible="1"/>
+                <field name="overtime_amt"/>
+            </xpath>
+            <xpath expr="//field[@name='overtime_amt']" position="attributes">
+                    <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//form/sheet/group" position="after">
+                <group>
+                    <field name="pay_1_33_hours" readonly="1"/>
+                    <field name="pay_1_67_hours" readonly="1"/>
+                    <field name="pay_2_hours" readonly="1"/>
+                </group>
+                <!-- <button name="compute_total" type="object" class="oe_highlight" string="測試"/> -->
+            </xpath>
+            <xpath expr="//form/sheet/div/button" position="after">
+                <button name="overtime_request_list" type="object" class="oe_stat_button" icon="fa-money">
+                    <field name="overtime_request_count" widget="statinfo" string="加班申請紀錄" help="加班申請紀錄"/>
+                </button>
+            </xpath>
+         </field>
+    </record>
+</odoo>

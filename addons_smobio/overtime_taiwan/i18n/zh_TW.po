@@ -1,0 +1,526 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* overtime_taiwan
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-16 13:08+0000\n"
+"PO-Revision-Date: 2020-08-16 21:10+0800\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.4.1\n"
+"Last-Translator: \n"
+"Language: zh_TW\n"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__pay_1_33_hours
+msgid "1.33倍加班工時"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_hr_payslip__pay_1_33_hours
+msgid "1.33倍加班工時合計"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__pay_1_67_hours
+msgid "1.67倍加班工時"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_hr_payslip__pay_1_67_hours
+msgid "1.67倍加班工時合計"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__pay_2_hours
+msgid "2倍加班工時"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_hr_payslip__pay_2_hours
+msgid "2倍加班工時合計"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_needaction
+msgid "Action Needed"
+msgstr "需要採取行動"
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "Approve Request"
+msgstr "批准加班申請"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_attachment_count
+msgid "Attachment Count"
+msgstr "附件數"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields.selection,name:overtime_taiwan.selection__dev_overtime_request__state__cancel
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "Cancel"
+msgstr "取消查詢"
+
+#. module: overtime_taiwan
+#: model:ir.model,name:overtime_taiwan.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "Confirm"
+msgstr "確認"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__confirm_date
+msgid "Confirm Date"
+msgstr "確認日期"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__comfirm_manager
+msgid "Confirm Manager"
+msgstr "確認人員"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__create_uid
+msgid "Created by"
+msgstr "建立者"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__create_date
+msgid "Created on"
+msgstr "創建時間"
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "Date"
+msgstr "日期:"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__dept_id
+msgid "Department"
+msgstr "部門"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__manager_id
+msgid "Department Manager"
+msgstr "部門經理"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields.selection,name:overtime_taiwan.selection__dev_overtime_request__state__done
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "Done"
+msgstr "完成"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields.selection,name:overtime_taiwan.selection__dev_overtime_request__state__draft
+msgid "Draft"
+msgstr "草稿"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__employee_id
+msgid "Employee"
+msgstr "員工"
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "Employees"
+msgstr "員工"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_follower_ids
+msgid "Followers"
+msgstr "關注人"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "關注者(渠道)"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "關注者(業務夥伴)"
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "Group By"
+msgstr "分組"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields.selection,name:overtime_taiwan.selection__dev_overtime_request__state__hr_confirm
+msgid "HR Confirmed"
+msgstr "待人資作業"
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.inherit_res_company_form
+msgid "HR 設置"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__hour
+msgid "Hour"
+msgstr "加班小時數"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__per_hour_amount
+msgid "Hourly Wages"
+msgstr "每小時工資"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__id
+msgid "ID"
+msgstr "ID"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,help:overtime_taiwan.field_dev_overtime_request__message_needaction
+#: model:ir.model.fields,help:overtime_taiwan.field_dev_overtime_request__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "如果勾選此項，有新消息會提醒您。"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,help:overtime_taiwan.field_dev_overtime_request__message_has_error
+#: model:ir.model.fields,help:overtime_taiwan.field_dev_overtime_request__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "勾選代表有訊息發生傳送錯誤。"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_is_follower
+msgid "Is Follower"
+msgstr "是訂閱者"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request____last_update
+msgid "Last Modified on"
+msgstr "最後修改:"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__write_uid
+msgid "Last Updated by"
+msgstr "最後更新："
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__write_date
+msgid "Last Updated on"
+msgstr "最後更新於"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "主要附件"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_has_error
+msgid "Message Delivery error"
+msgstr "訊息遞送錯誤"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_ids
+msgid "Messages"
+msgstr "消息"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__name
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "Name"
+msgstr "名稱"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr "行動數量"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_has_error_counter
+msgid "Number of errors"
+msgstr "錯誤數量"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,help:overtime_taiwan.field_dev_overtime_request__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "需要行動消息的數量"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,help:overtime_taiwan.field_dev_overtime_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "有發送錯誤的郵件數量"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,help:overtime_taiwan.field_dev_overtime_request__message_unread_counter
+msgid "Number of unread messages"
+msgstr "未讀消息的數量"
+
+#. module: overtime_taiwan
+#: model:hr.salary.rule,name:overtime_taiwan.dev_emp_overtime_rule
+msgid "Overtime"
+msgstr "加班"
+
+#. module: overtime_taiwan
+#: model:res.groups,comment:overtime_taiwan.group_overtime_department_manager
+#: model:res.groups,name:overtime_taiwan.group_overtime_department_manager
+msgid "Overtime Department Manager"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.actions.act_window,name:overtime_taiwan.action_dev_overtime_request
+#: model:ir.model.fields,field_description:overtime_taiwan.field_hr_leave_allocation__overtime_request_id
+#: model:ir.ui.menu,name:overtime_taiwan.menu_dev_overtime_request
+#: model:ir.ui.menu,name:overtime_taiwan.menu_main_overtime_request
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "Overtime Request"
+msgstr "加班單申請"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_hr_payslip__overtime_amt
+msgid "Overtime Wages"
+msgstr "加班工資"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_hr_payslip__overtime_req_ids
+msgid "Ovetime Requests"
+msgstr "加班單申請"
+
+#. module: overtime_taiwan
+#: model:ir.model,name:overtime_taiwan.model_hr_payslip
+msgid "Pay Slip"
+msgstr "薪資單"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__payslip_id
+msgid "Payslip"
+msgstr "薪資單"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__reason
+msgid "Reason"
+msgstr "原因"
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "Reject Request"
+msgstr "退回申請"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields.selection,name:overtime_taiwan.selection__dev_overtime_request__state__reject
+msgid "Rejected"
+msgstr "已拒絕"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__date
+msgid "Request Date"
+msgstr "請求日期"
+
+#. module: overtime_taiwan
+#: code:addons/overtime_taiwan/models/dev_overtime_request.py:0
+#, python-format
+msgid "Request Delete in Draft State !!!"
+msgstr "加班單僅可於草稿狀態刪除"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "簡訊發送錯誤"
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "Send Request"
+msgstr "送出申請"
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "Set to Draft"
+msgstr "設置為草稿"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__state
+msgid "State"
+msgstr "狀態"
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "States"
+msgstr "狀態"
+
+#. module: overtime_taiwan
+#: model:ir.model,name:overtime_taiwan.model_hr_leave_allocation
+msgid "Time Off Allocation"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_tree
+msgid "Total"
+msgstr "總計"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_unread
+msgid "Unread Messages"
+msgstr "未讀消息"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "未讀消息計數器"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__user_id
+msgid "User"
+msgstr "使用者"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields.selection,name:overtime_taiwan.selection__dev_overtime_request__state__approval
+msgid "Waiting For HR Confirm"
+msgstr "待人資確認"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields.selection,name:overtime_taiwan.selection__dev_overtime_request__state__request
+msgid "Waiting For Manager Approval"
+msgstr "待主管核准"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__website_message_ids
+msgid "Website Messages"
+msgstr "網站信息"
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,help:overtime_taiwan.field_dev_overtime_request__website_message_ids
+msgid "Website communication history"
+msgstr "網站溝通記錄"
+
+#. module: overtime_taiwan
+#: model:ir.model,name:overtime_taiwan.model_dev_overtime_request
+msgid "dev.overtime.request"
+msgstr "加班申請單"
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "上班時間"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "下班時間"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__attendance_ids
+msgid "出勤紀錄"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "加班工時輸入"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "加班查核作業"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__check_meno
+msgid "加班查核備註"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_hr_payslip__overtime_request_count
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.dev_hr_payslip_overtime_inherit_form
+msgid "加班申請紀錄"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "加班處理作業"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "加班補休發放"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_hr_leave_allocation__overtime_to_allocate_leave
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.inherit_hr_leave_allocation_view_form_manager
+msgid "加班轉補休"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "回到人資作業"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "已取消加班單"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "已完成作業"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "已退回加班單"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "待主管審核"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "待人資作業"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "待人資查核"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "我的加班單"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "本部門加班單"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_filter
+msgid "草稿加班單"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_res_company__compensatory_leave_id
+msgid "補休休假類型"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model:ir.model.fields,field_description:overtime_taiwan.field_dev_overtime_request__holidays_id
+msgid "補休分配紀錄"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "補休發放"
+msgstr ""
+
+#. module: overtime_taiwan
+#: model_terms:ir.ui.view,arch_db:overtime_taiwan.view_dev_overtime_request_form
+msgid "載入出勤紀錄"
+msgstr ""

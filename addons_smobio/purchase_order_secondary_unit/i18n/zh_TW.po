@@ -1,0 +1,44 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_order_secondary_unit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-25 21:04+0000\n"
+"PO-Revision-Date: 2020-04-14 11:36+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: purchase_order_secondary_unit
+#: model:ir.model.fields,field_description:purchase_order_secondary_unit.field_product_product__purchase_secondary_uom_id
+#: model:ir.model.fields,field_description:purchase_order_secondary_unit.field_product_template__purchase_secondary_uom_id
+msgid "Default unit purchase"
+msgstr "採購用預設單位"
+
+#. module: purchase_order_secondary_unit
+#: model:ir.model,name:purchase_order_secondary_unit.model_product_template
+msgid "Product Template"
+msgstr "產品模版"
+
+#. module: purchase_order_secondary_unit
+#: model:ir.model,name:purchase_order_secondary_unit.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "採購訂單明細"
+
+#. module: purchase_order_secondary_unit
+#: model:ir.model.fields,field_description:purchase_order_secondary_unit.field_purchase_order_line__secondary_uom_qty
+msgid "Secondary Qty"
+msgstr "輔助單位數量"
+
+#. module: purchase_order_secondary_unit
+#: model:ir.model.fields,field_description:purchase_order_secondary_unit.field_purchase_order_line__secondary_uom_id
+msgid "Secondary uom"
+msgstr "輔助計量單位"
