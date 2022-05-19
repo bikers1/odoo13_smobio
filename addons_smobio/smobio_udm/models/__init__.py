@@ -6,3 +6,4 @@ from . import hr_expense_sheet
 from . import employee_advance_expense
 from . import tier_definition
 from . import sale_order
+from . import account_payment
