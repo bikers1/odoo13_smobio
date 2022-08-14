@@ -17,7 +17,7 @@
     'images': ['static/description/img1.jpg'],
     'author': 'Probuse Consulting Service Pvt. Ltd.',
     'website': 'www.probuse.com',
-    'depends': ['hr_expense'],
+    'depends': ['web','hr_expense'],
     'live_test_url': 'https://youtu.be/Mty6cj6O6Xw',
     'data': [
         'security/employee_advance_expense_security.xml',
