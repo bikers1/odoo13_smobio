@@ -16,19 +16,17 @@
                <t t-foreach="docs" t-as="doc">
                     <t t-call="web.internal_layout">
                          <div class="page">
-                            <div class="row">
                             <div class="text-center">
                             <h3>
                                 Advance Expense - <span t-field="doc.name"/>
                             </h3>
-                            </div>
-                         </div>
+                             </div>
                              <div class="text-left">
                                  <h3>
                                      <span t-field="doc.employee_id.name"/> - <span t-field="doc.state"/>
                                  </h3>
                              </div>
-                            <table class="table table-responsive">
+                            <table class="table o_main_table">
                                <tr style="border: 2px solid black;">
                                    <td><strong>Department</strong></td><td> <span t-field="doc.department_id.name"/></td>
                                    <td><strong>Job Title</strong></td><td> <span t-field="doc.job_id.name"/></td>
@@ -45,7 +43,7 @@
                                </tr>
                             </table>
                             <h3>General Information</h3>
-                            <table class="table table-responsive">
+                            <table class="table o_main_table">
                                <tr style="border: 2px solid black;">
                                    <td><strong>Confirmed Date</strong></td><td> <span t-field="doc.confirm_date"/></td>
                                    <td><strong>Confirmed By</strong> </td><td> <span t-field="doc.confirm_by_id"/></td>
@@ -62,7 +60,7 @@
                                </tr>
                             </table>
                             <h3>Advance Expense Lines</h3>
-                            <table class="table table-responsive">
+                            <table class="table o_main_table">
                                 <thead style="border: 2px solid black;">
                                      <th>Expense</th>
                                      <th>Description</th>
@@ -81,7 +79,7 @@
                                </tr>
                             </table>
                             <h3>Accounting Information</h3>
-                            <table class="table table-responsive">
+                            <table class="table o_main_table">
                                <tr style="border: 2px solid black;">
                                    <td><strong>Employee Account</strong> </td><td> <span t-field="doc.partner_id.name"/></td>
                                    <td><strong>Payment Method</strong></td><td> <span t-field="doc.journal_id.name"/></td>

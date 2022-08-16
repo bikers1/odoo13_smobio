@@ -15,13 +15,22 @@
 
         <!-- Purchase Order Report -->
         <template id="purchse_report_inherit" inherit_id="purchase.report_purchaseorder_document">
-            <xpath expr="//div[@class='page']/div[@class='row justify-content-end']/div[1]" position="after">
-                <div style="font-size:16px; padding-bottom:15px;">
-                    <tr class="border-black">
-                        <td><strong>Amount In Word : </strong></td>
-                        <td><span t-field="o.num_word"/></td>
-                    </tr>
-                </div>
+<!--            <xpath expr="//div[@class='page']/div[@class='row justify-content-end']/div[1]" position="after">-->
+            <xpath expr="//div[@class='page']/div[@class='row justify-content-end']" position="after">
+<!--                <div class="col-4">-->
+                <table class="table table-sm">
+                        <tr>
+                            <td class="text-right"></td>
+                            <td class="text-right"><strong>Amount In Word :</strong><span t-field="o.num_word"/></td>
+                        </tr>
+                    </table>
+<!--                </div>-->
+<!--                <div style="font-size:16px; padding-bottom:15px;">-->
+<!--                    <tr class="border-black">-->
+<!--                        <td><strong>Amount In Word : </strong></td>-->
+<!--                        <td><span t-field="o.num_word"/></td>-->
+<!--                    </tr>-->
+<!--                </div>-->
             </xpath>
         </template>
 
