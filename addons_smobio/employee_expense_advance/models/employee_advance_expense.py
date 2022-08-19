@@ -39,7 +39,7 @@ class EmployeeAdvanceExpense(models.Model):
     
     name = fields.Char(
         string='Number',
-        default='New',
+        default=lambda self: _('New'),
         readonly=True,
     )
     employee_id = fields.Many2one('hr.employee', required=True, readonly=True, string="Employee",default=lambda self: self.env['hr.employee'].search([('user_id', '=', self.env.uid)], limit=1), states={'draft': [('readonly', False)]})
@@ -101,7 +101,7 @@ class EmployeeAdvanceExpense(models.Model):
         if not self.advance_expense_line_ids:
            raise Warning(_('Please add some advance expense lines.'))
         else:
-            self.name = self.env['ir.sequence'].next_by_code('employee.advance.expense')
+            # self.name = self.env['ir.sequence'].next_by_code('employee.advance.expense')
             self.state = 'confirm'
             self.confirm_date = time.strftime('%Y-%m-%d')
             self.confirm_by_id = self.env.user.id
@@ -178,5 +178,13 @@ class EmployeeAdvanceExpense(models.Model):
         res = action.read()[0]
         res['domain'] = str([('id','=',self.move_id.id)])
         return res
+
+    @api.model
+    def create(self, vals):
+        if vals.get('name', _('New')) == _('New'):
+            vals['name'] = self.env['ir.sequence'].next_by_code('employee.advance.expense') or _('New')
+
+        result = super(EmployeeAdvanceExpense, self).create(vals)
+        return result
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
